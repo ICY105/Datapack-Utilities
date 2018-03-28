@@ -5,9 +5,10 @@ Datapack Utils currently Handles:
 
 * Villager based Left/Right click detection. No Carrot on a Stick needed.
 * Chunk-base world generation
-* Custom block methods (Currently only player heads)
+* Custom block placement methods
 * Timer scoreboards
 * Various player stats
+* Extra block tags for groups of blocks that should have tags
 
 ## Download
 
