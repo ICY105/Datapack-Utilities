@@ -8,3 +8,7 @@ Datapack Utils currently Handles:
 * Custom block methods (Currently only player heads)
 * Timer scoreboards
 * Various player stats
+
+## Download
+
+Version 0.1.0: [download](https://www.dropbox.com/s/l5ryo7vqltfod4o/DatapackUtils.zip?dl=1)
