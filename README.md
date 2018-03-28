@@ -1,5 +1,5 @@
 # Datapack-Utilities
-Datapack Utils aims to handle variaous complicated tasks and simplify them into something easy to use.
+Datapack Utils aims to handle various complicated tasks and simplify them into something easy to use.
 
 Datapack Utils currently Handles:
 
