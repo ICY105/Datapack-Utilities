@@ -12,4 +12,4 @@ Datapack Utils currently Handles:
 
 ## Download
 
-Version 0.1.2: [download](https://www.dropbox.com/s/080ah5uogct88of/DatapackUtils_v0.1.2.zip?dl=1)
+Version 0.2.0: [download](https://www.dropbox.com/s/m2kt14sntfhir6m/DatapackUtils_0.2.0.zip?dl=1)
