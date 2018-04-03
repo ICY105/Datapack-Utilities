@@ -4,3 +4,5 @@
 
 # See the sin function for detailed notes on the implementation and error of this function
 
+#NOTES FOR SELF: add 900 to the input, and if the input is then greater than 1800, just subtract 3600. Voila
+
