@@ -1,5 +1,5 @@
 
-#in_0: input angle in degrees, multiplied by 10. INPUT MUST BE IN THE INTERVAL OF [-1800,1800]
+#in_0: input angle in degrees, multiplied by 10. INPUT MUST BE IN THE INTERVAL OF [-900,2700]
 #out_0: cosine of angle result, also multiplied by 10
 
 # See the sin function for detailed notes on the implementation and error of this function
