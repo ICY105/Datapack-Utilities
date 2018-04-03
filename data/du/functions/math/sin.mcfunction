@@ -2,6 +2,7 @@
 #in_0: input angle in degrees, multiplied by 10
 #out_0: sine of angle result, also multiplied by 10
 
+# This function guarantees that in_0 will be the same as before execution
 # The multiplication by 10 is to keep as much accuracy as possible while using integer math in the scoreboard.
 # This is only an approximation of course
 # Unfortunately, this will have a maximum numerical error of 1 (0.1 when scaled back down by 10), which can be up to ~50% error at some values
