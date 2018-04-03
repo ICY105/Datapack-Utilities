@@ -1,49 +1,31 @@
 
-#in_0: input angle in radians, multiplied by 1,000,000
-#out_0: sine of angle result, also multiplied by 1,000,000
+#in_0: input angle in degrees, multiplied by 10. INPUT MUST BE IN THE INTERVAL OF [-1800,1800]
+#out_0: sine of angle result, also multiplied by 10
 
-# This is only an approximation of course. 
-# The multiplication by 1,000,000 is to keep accuracy while using integer math in the scoreboard.
-# Algorithm taken from http://lab.polygonal.de/2007/07/18/fast-and-accurate-sinecosine-approximation/
+# The multiplication by 100 is to keep as much accuracy as possible while using integer math in the scoreboard.
+# This is only an approximation of course
+# Unfortunately, this will have a maximum numerical error of 1 (0.1 when scaled back down by 10), which can be up to ~50% error at some values
+# You can see my error calculations as well as a graph of the function here: https://www.desmos.com/calculator/nzib6wjt80
+# Algorithm taken from https://en.wikipedia.org/wiki/Bhaskara_I%27s_sine_approximation_formula
 
 # ---------------------------------------
 
-# Bound range
-
-scoreboard players set temp_1 du_data 6283185
-
-scoreboard players operation temp_2 du_data = in_0 du_data 
-
-scoreboard players set temp_0 du_data -3141592
-execute if score temp_2 du_data < temp_0 du_data run scoreboard players operation in_0 du_data += temp_1 du_data 
-
-scoreboard players set temp_0 du_data 3141592
-execute if score temp_2 du_data > temp_0 du_data run scoreboard players operation in_0 du_data -= temp_1 du_data 
+# Range calculations
+scoreboard players set temp_0 du_data 0
+scoreboard players set temp_1 du_data -1
+execute if score in_0 du_data matches ..0 run scoreboard players set temp_0 1
+execute if score in_0 du_data matches ..0 run scoreboard players operation in_0 du_data *= temp_1 du_data 
 
 # Compute sine
-
-scoreboard players set temp_0 du_data 0
-scoreboard players set temp_3 du_data -1
-
-scoreboard players set out_0 du_data 1273239
-scoreboard players operation out_0 du_data *= in_0 du_data 
-
-scoreboard players set temp_1 du_data 405284
-scoreboard players operation temp_1 du_data *= in_0 du_data 
+scoreboard players set temp_1 du_data 1800
+scoreboard players operation temp_1 du_data -= in_0 du_data
 scoreboard players operation temp_1 du_data *= in_0 du_data
+scoreboard players set out_0 du_data 40
+scoreboard players operation out_0 du_data *= temp_1 du_data
 
-execute if score in_0 du_data < temp_0 du_data run scoreboard players operation out_0 du_data += temp_1 du_data
-execute if score in_0 du_data >= temp_0 du_data run scoreboard players operation out_0 du_data -= temp_1 du_data
+scoreboard players set temp_2 du_data 4050000
+scoreboard players operation temp_2 du_data -= temp_1 du_data
+scoreboard players operation out_0 du_data /= temp_2 du_data
 
-# scoreboard players operation temp_1 du_data = out_0 du_data 
-# scoreboard players operation temp_2 du_data = out_0 du_data 
-# scoreboard players operation temp_2 du_data *= temp_3 du_data 
-# execute if score out_0 du_data < temp_0 du_data run scoreboard players operation temp_1 du_data *= temp_2 du_data
-# execute if score out_0 du_data >= temp_0 du_data run scoreboard players operation temp_1 du_data *= out_0 du_data
-# scoreboard players operation temp_1 du_data -= out_0 du_data
-# scoreboard players set temp_2 du_data 225000
-# scoreboard players operation temp_1 du_data *= temp_2 du_data
-# scoreboard players operation temp_1 du_data += out_0 du_data
-# scoreboard players operation out_0 du_data = temp_1 du_data
-
-
+scoreboard players set temp_1 du_data -1
+execute if score temp_0 du_data matches 1 run scoreboard players operation out_0 du_data *= temp_1 du_data
