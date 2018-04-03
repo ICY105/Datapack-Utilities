@@ -1,8 +1,11 @@
 
-#in_0: input angle in degrees, multiplied by 10. INPUT MUST BE IN THE INTERVAL OF [-900,2700]
+#in_0: input angle in degrees, multiplied by 10
 #out_0: cosine of angle result, also multiplied by 10
 
+# Unfortunately, this function does not guarantee that in_0 will be the same as before execution, unlike the sin function
 # See the sin function for detailed notes on the implementation and error of this function
 
-#NOTES FOR SELF: add 900 to the input, and if the input is then greater than 1800, just subtract 3600. Voila
-
+scoreboard players set temp_0 du_data 900
+scoreboard players operation temp_0 du_data -= in_0 du_data
+scoreboard players operation in_0 du_data = temp_0 du_data
+function du:math/sin
