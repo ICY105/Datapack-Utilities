@@ -6,7 +6,7 @@ Datapack Utils currently Handles:
 * Some Math functiones, including RNG.
 * Villager based Left/Right click detection. No Carrot on a Stick needed.
 * Block-Locating Raycasting
-* Chunk-base world generation
+* Chunk-base world generation in all dimensions
 * Custom block placement methods
 * Timer scoreboards
 * Various player stats
@@ -14,4 +14,4 @@ Datapack Utils currently Handles:
 
 ## Download
 
-Version 1.0.0: [download](https://www.dropbox.com/s/vl5i0cv0otsz3w2/DatapackUtils_v1.0.0.zip?dl=1)
+Version 1.0.0: [download](https://www.dropbox.com/s/o9nxpjhi71b7l3q/DatapackUtils_v1.0.0.zip?dl=1)
