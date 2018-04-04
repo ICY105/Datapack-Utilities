@@ -1,6 +1,8 @@
 # Datapack-Utilities
 Datapack Utils aims to handle various complicated tasks and simplify them into something easy to use.
 
+If you have any suggestions, please let me know!
+
 Datapack Utils currently Handles:
 
 * Some Math functiones, including RNG.
