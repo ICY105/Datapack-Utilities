@@ -3,7 +3,9 @@ Datapack Utils aims to handle various complicated tasks and simplify them into s
 
 Datapack Utils currently Handles:
 
+* Some Math functiones, including RNG.
 * Villager based Left/Right click detection. No Carrot on a Stick needed.
+* Block-Locating Raycasting
 * Chunk-base world generation
 * Custom block placement methods
 * Timer scoreboards
