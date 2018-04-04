@@ -1,6 +1,5 @@
 
-effect give @s weakness 1 127
-effect give @s mining_fatigue 1 2
+effect give @s mining_fatigue 1 6 true
 
 execute if score @s du_waxe matches 1.. run function du:raytrace/start_ray_stripped_log
 execute if score @s du_gaxe matches 1.. run function du:raytrace/start_ray_stripped_log
