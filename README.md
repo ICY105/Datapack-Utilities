@@ -1,7 +1,7 @@
 # Datapack-Utilities
 Datapack Utils aims to handle various complicated tasks and simplify them into something easy to use.
 
-Want to stay up-to-date with development, or chat about Datpack Utils live? Join the discord server: https://discord.gg/6uJ4eJH
+Need help or want to stay up-to-date with development? Join the discord server: https://discord.gg/6uJ4eJH
 
 Datapack Utils currently Handles:
 
