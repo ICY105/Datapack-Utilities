@@ -17,4 +17,4 @@ Datapack Utils currently Handles:
 
 ## Download
 
-Version 1.1.0: [download](https://www.dropbox.com/s/aj1etdr3mfgwbip/DatapackUtils_v1.1.0.zip?dl=1)
+Version 1.1.1: [download](https://www.dropbox.com/s/wd3omlwfwgbtzy7/DatapackUtils_v1.1.1.zip?dl=1)
