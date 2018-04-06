@@ -16,5 +16,3 @@ execute if score temp_0 du_data = in_0 du_data store result score out_0 du_data 
 
 execute store result score temp_0 du_data run data get entity @s Inventory[0].Slot
 execute if score temp_0 du_data = in_0 du_data store result score out_0 du_data run data get entity @s Inventory[0].tag.Damage
-
-
