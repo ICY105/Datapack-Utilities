@@ -15,7 +15,7 @@ Datapack Utils currently Handles:
 * Various player stats
 * Extra block tags for groups of blocks that should have tags
 
-Check out the wiki for more information on how to use these features.
+Check out the [wiki](https://github.com/ImCoolYeah105/Datapack-Utilities/wiki) for more information on how to use these features.
 
 ## Download
 
