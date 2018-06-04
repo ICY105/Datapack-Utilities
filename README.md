@@ -8,6 +8,7 @@ Datapack Utils currently Handles:
 * Some Math functiones, including RNG.
 * Villager based Left/Right click detection. No Carrot on a Stick needed.
 * Inventory Management (currently get count and get damage)
+* Custom Durability for Unbreakable Items
 * Block-Locating Raycasting
 * Chunk-base world generation in all dimensions
 * Custom block placement methods
