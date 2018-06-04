@@ -19,4 +19,4 @@ Check out the [wiki](https://github.com/ImCoolYeah105/Datapack-Utilities/wiki) f
 
 ## Download
 
-Version 1.1.5: [download](https://www.dropbox.com/s/9n56rtw8tdu8hfq/DatapackUtils_v1.1.5.zip?dl=1)
+Version 1.2.0: [download](https://www.dropbox.com/s/k38q2vp9tad4ubk/DatapackUtils_v1.2.0.zip?dl=1)
