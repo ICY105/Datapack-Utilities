@@ -44,7 +44,7 @@ scoreboard objectives add du_dhoe minecraft.used:minecraft.diamond_hoe
 
 
 team add du_nopush
-team option du_nopush collisionRule never
+team modify du_nopush collisionRule never
 
 #marks spawn chunks
 kill @e[type=area_effect_cloud,tag=du_spawn_chunks]
