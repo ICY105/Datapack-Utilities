@@ -20,4 +20,4 @@ Check out the [wiki](https://github.com/ImCoolYeah105/Datapack-Utilities/wiki) f
 
 ## Download
 
-Moved to curseforge: https://minecraft.curseforge.com/projects/datapack-utils/files
+Moved to curseforge: https://minecraft.curseforge.com/projects/datapack-utils
