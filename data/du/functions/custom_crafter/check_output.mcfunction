@@ -21,7 +21,7 @@ execute if score in_8 du_data matches 1.. if score in_8 du_data < temp_0 du_data
 execute if score temp_0 du_data matches 65.. run scoreboard players set temp_0 du_data 0
 
 
-function du:custom_crafter/check_stacksize
+execute if score out du_data matches 1 run function du:custom_crafter/check_stacksize
 
 scoreboard players operation temp_0 du_data *= out du_data
 execute if score temp_0 du_data matches 65.. run function du:custom_crafter/inv/compact
