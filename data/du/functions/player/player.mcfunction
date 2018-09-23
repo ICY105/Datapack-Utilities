@@ -22,7 +22,7 @@ execute if entity @s[nbt={SelectedItem:{ tag:{du_durability:1b,Unbreakable:1b} }
 execute if score @s du_hurt matches 1.. run function du:player/durability/process_armor
 
 #damage
-execute if score @s du_health matches 12.. run function du:player/damage
+execute if score @s du_health matches 12.. if entity @s[nbt={HurtTime:0s}] run function du:player/damage
 
 #custom blocks
 execute if entity @s[scores={du_placehead=1..}] run function du:player/place_head
