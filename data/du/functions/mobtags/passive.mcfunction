@@ -1,0 +1,2 @@
+#Passive Tags
+tag @s[type=!elder_guardian,type=!wither_skeleton,type=!stray,type=!husk,type=!zombie_villager,type=!skeleton_horse,type=!evoker_fangs,type=!evoker,type=!vex,type=!vindicator,type=!illusioner,type=!creeper,type=!skeleton,type=!spider,type=!zombie,type=!giant,type=!slime,type=!ghast,type=!cave_spider,type=!silverfish,type=!blaze,type=!magma_cube,type=!ender_dragon,type=!wither,type=!witch,type=!endermite,type=!guardian,type=!shulker,type=!zombie_pigman,type=!enderman,type=!wolf,type=!polar_bear,type=!llama] add du_passive
