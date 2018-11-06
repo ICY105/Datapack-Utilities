@@ -1,0 +1,17 @@
+{
+	"values": [
+		"minecraft:activator_rail",
+		"#aestd:command_blocks",
+		"minecraft:dispenser",
+		"#minecraft:doors",
+		"minecraft:dropper",
+		"#aestd:fence_gates",
+		"minecraft:hopper",
+		"minecraft:note_block",
+		"minecraft:piston",
+		"minecraft:powered_rail",
+		"minecraft:rail",
+		"minecraft:redstone_lamp",
+		"minecraft:tnt"
+	]
+}

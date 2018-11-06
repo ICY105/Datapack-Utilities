@@ -1,0 +1,10 @@
+{
+	"values": [
+		"minecraft:chest",
+		"minecraft:trapped_chest",
+		"#aestd:shulker_boxes",
+		"minecraft:dispenser",
+		"minecraft:dropper",
+		"minecraft:jukebox"
+	]
+}

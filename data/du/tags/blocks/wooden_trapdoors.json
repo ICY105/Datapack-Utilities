@@ -1,0 +1,10 @@
+{
+	"values": [
+		"minecraft:oak_trapdoor",
+		"minecraft:birch_trapdoor",
+		"minecraft:spruce_trapdoor",
+		"minecraft:dark_oak_trapdoor",
+		"minecraft:acacia_trapdoor",
+		"minecraft:jungle_trapdoor"
+	]
+}

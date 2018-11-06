@@ -1,0 +1,21 @@
+{
+	"values": [
+		"#minecraft:signs",
+		"#minecraft:banners",
+		"#aestd:store_items",
+		"minecraft:beacon",
+		"minecraft:spawner",
+		"minecraft:piston_head",
+		"minecraft:enchanting_table",
+		"minecraft:end_portal",
+		"minecraft:ender_chest",
+		"#aestd:heads",
+		"#aestd:command_blocks",
+		"minecraft:end_gateway",
+		"minecraft:structure_block",
+		"minecraft:daylight_detector",
+		"minecraft:comparator",
+		"#aestd:beds",
+		"minecraft:conduit"
+	]
+}

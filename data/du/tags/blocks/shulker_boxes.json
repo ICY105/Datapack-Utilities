@@ -1,6 +1,5 @@
 {
-	"values":[
-		"minecraft:shulker_box",
+	"values": [
 		"minecraft:white_shulker_box",
 		"minecraft:orange_shulker_box",
 		"minecraft:magenta_shulker_box",
@@ -16,6 +15,7 @@
 		"minecraft:brown_shulker_box",
 		"minecraft:green_shulker_box",
 		"minecraft:red_shulker_box",
-		"minecraft:black_shulker_box"
+		"minecraft:black_shulker_box",
+		"minecraft:shulker_box"
 	]
 }

@@ -1,0 +1,20 @@
+{
+	"values": [
+		"minecraft:coal_ore",
+		"minecraft:diamond_ore",
+		"minecraft:emerald_ore",
+		"minecraft:nether_quartz_ore",
+		"minecraft:lapis_ore",
+		"minecraft:redstone_ore",
+		"minecraft:glowstone",
+		"minecraft:sea_lantern",
+		"minecraft:melon",
+		"minecraft:nether_warts",
+		"minecraft:potatoes",
+		"minecraft:beetroot_seeds",
+		"minecraft:wheat_seeds",
+		"minecraft:grass",
+		"minecraft:gravel",
+		"#minecraft:leaves"
+	]
+}

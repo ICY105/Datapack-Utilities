@@ -1,0 +1,12 @@
+{
+	"values": [
+		"minecraft:end_stone",
+		"minecraft:obsidian",
+		"minecraft:bedrock",
+		"minecraft:iron_bars",
+		"minecraft:chorus_plant",
+		"minecraft:chorus_flower",
+		"#aestd:end_stone_brick_blocks",
+		"#aestd:purpur_blocks"
+	]
+}

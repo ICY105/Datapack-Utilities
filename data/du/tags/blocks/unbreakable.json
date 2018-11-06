@@ -1,17 +1,12 @@
 {
-	"values":[
-		"minecraft:air",
-		"minecraft:cave_air",
-		"minecraft:void_air",
-		"minecraft:bedrock",
+	"values": [
 		"minecraft:barrier",
-		"minecraft:command_block",
-		"minecraft:repeating_command_block",
-		"minecraft:chain_command_block",
-		"minecraft:structure_block",
-		"minecraft:structure_void",
-		"minecraft:end_portal_frame",
+		"minecraft:bedrock",
+		"#aestd:command_blocks",
+		"minecraft:end_gateway",
 		"minecraft:end_portal",
-		"minecraft:nether_portal"
+		"minecraft:end_portal_frame",
+		"minecraft:nether_portal",
+		"minecraft:structure_block"
 	]
 }
