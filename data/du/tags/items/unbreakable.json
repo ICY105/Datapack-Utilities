@@ -1,0 +1,9 @@
+{
+	"values": [
+		"minecraft:barrier",
+		"minecraft:bedrock",
+		"#aestd:command_blocks",
+		"minecraft:end_portal_frame",
+		"minecraft:structure_block"
+	]
+}

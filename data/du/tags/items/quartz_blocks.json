@@ -1,0 +1,12 @@
+{
+	"values": [
+		"minecraft:quartz_slab",
+		"minecraft:smooth_quartz",
+		"minecraft:chiseled_quartz_block",
+		"minecraft:quartz_block",
+		"minecraft:quartz_pillar",
+		"minecraft:quartz_stairs",
+		"minecraft:smooth_quartz_stairs",
+		"minecraft:smooth_quartz_slab"
+	]
+}

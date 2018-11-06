@@ -1,0 +1,14 @@
+{
+	"values": [
+		"minecraft:barrier",
+		"#aestd:command_blocks",
+		"minecraft:debug_stick",
+		"minecraft:command_block_minecart",
+		"minecraft:firework_rocket",
+		"minecraft:spawner",
+		"minecraft:structure_block",
+		"minecraft:structure_void",
+		"minecraft:dragon_egg",
+		"minecraft:knowledge_book"
+	]
+}

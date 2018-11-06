@@ -1,0 +1,19 @@
+{
+	"values": [
+		"#minecraft:planks",
+		"#minecraft:wooden_slabs",
+		"#aestd:wooden_fence_gates",
+		"#minecraft:signs",
+		"#minecraft:wooden_stairs",
+		"#minecraft:logs",
+		"minecraft:coal_block",
+		"#minecraft:leaves",
+		"#minecraft:wool",
+		"minecraft:bookshelf",
+		"minecraft:tnt",
+		"minecraft:vine",
+		"#aestd:plants",
+		"#minecraft:carpets",
+		"minecraft:hay_block"
+	]
+}

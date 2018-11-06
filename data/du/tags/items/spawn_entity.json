@@ -1,0 +1,21 @@
+{
+	"values": [
+		"#aestd:spawn_eggs",
+		"minecraft:armor_stand",
+		"minecraft:snowball",
+		"minecraft:ender_pearl",
+		"minecraft:splash_potion",
+		"minecraft:lingering_potion",
+		"minecraft:egg",
+		"minecraft:ender_eye",
+		"#minecraft:boats",
+		"#aestd:minecarts",
+		"minecraft:trident",
+		"minecraft:firework_rocket",
+		"minecraft:lead",
+		"minecraft:painting",
+		"minecraft:item_frame",
+		"minecraft:end_crystal",
+		"minecraft:experience_bottle"
+	]
+}

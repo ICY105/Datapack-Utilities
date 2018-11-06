@@ -1,0 +1,16 @@
+{
+	"values": [
+		"#aestd:wooden_tools",
+		"#aestd:stone_tools",
+		"#aestd:golden_tools",
+		"#aestd:iron_tools",
+		"#aestd:diamond_tools",
+		"minecraft:shears",
+		"minecraft:flint_and_steel",
+		"minecraft:compass",
+		"minecraft:fishing_rod",
+		"minecraft:clock",
+		"minecraft:name_tag",
+		"minecraft:lead"
+	]
+}
