@@ -1,0 +1,9 @@
+{
+	"values": [
+		"minecraft:armor_stand",
+		"minecraft:phantom",
+		"minecraft:zombie_pigman",
+		"#minecraft:skeletons",
+		"#aestd:zombies"
+	]
+}

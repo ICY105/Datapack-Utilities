@@ -1,0 +1,11 @@
+{
+	"values": [
+		"#aestd:zombies",
+		"#minecraft:skeletons",
+		"minecraft:wither",
+		"minecraft:phantom",
+		"minecraft:skeleton_horse",
+		"minecraft:zombie_pigman",
+		"minecraft:drowned"
+	]
+}

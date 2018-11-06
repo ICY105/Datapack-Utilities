@@ -1,0 +1,20 @@
+{
+	"values": [
+		"minecraft:blaze",
+		"minecraft:creeper",
+		"minecraft:dragon_fireball",
+		"minecraft:end_crystal",
+		"minecraft:ender_dragon",
+		"minecraft:enderman",
+		"minecraft:fireball",
+		"minecraft:ghast",
+		"minecraft:sheep",
+		"minecraft:small_fireball",
+		"minecraft:snow_golem",
+		"minecraft:tnt",
+		"minecraft:villager",
+		"minecraft:wither",
+		"minecraft:wither_skull",
+		"#aestd:zombies"
+	]
+}
