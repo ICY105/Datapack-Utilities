@@ -41,6 +41,7 @@ scoreboard objectives add du_shoe minecraft.used:minecraft.stone_hoe
 scoreboard objectives add du_ihoe minecraft.used:minecraft.iron_hoe
 scoreboard objectives add du_dhoe minecraft.used:minecraft.diamond_hoe
 
+#Team Data
 team add du_nopush
 team modify du_nopush collisionRule never
 
@@ -55,5 +56,10 @@ scoreboard players operation rng_seed du_data = out_0 du_data
 
 #ID stuff
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
+
+#Static Region
+scoreboard players set is_loaded du_data 0
+function du:base/check_static_region
+
 
 say [Loaded Datapack Utils vX by ImCoolYeah105]

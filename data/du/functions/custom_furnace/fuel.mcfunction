@@ -27,6 +27,7 @@ execute if block ~ ~ ~ furnace{Items:[{Slot:1b,id:"minecraft:dark_oak_planks"}]}
 
 execute if block ~ ~ ~ furnace{BurnTime:0s} run function du:custom_furnace/fuel_2
 
-execute store result score temp_1 du_data run data get block ~ ~ ~ Items[1].Count
+execute store result score temp_1 du_data run data get block ~ ~ ~ Items[{Slot:1b}].Count
 scoreboard players remove temp_1 du_data 1
-execute store result block ~ ~ ~ Items[1].Count byte 1 run scoreboard players get temp_1 du_data
+execute store result block ~ ~ ~ Items[{Slot:1b}].Count byte 1 run scoreboard players get temp_1 du_data
+execute if block ~ ~ ~ furnace[lit=false] run function du:custom_furnace/make_lit
