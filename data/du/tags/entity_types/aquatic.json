@@ -5,6 +5,7 @@
 		"minecraft:guardian",
 		"minecraft:elder_guardian",
 		"minecraft:drowned",
-		"minecraft:squid"
+		"minecraft:squid",
+		"minecraft:turtle"
 	]
 } 

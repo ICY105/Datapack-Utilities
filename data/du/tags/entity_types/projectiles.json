@@ -1,6 +1,6 @@
 {
 	"values": [
-		"minecraft:arrow",
+		"#du:arrows",
 		"minecraft:dragon_fireball",
 		"minecraft:egg",
 		"minecraft:ender_pearl",
@@ -11,7 +11,6 @@
 		"minecraft:shulker_bullet",
 		"minecraft:small_fireball",
 		"minecraft:snowball",
-		"minecraft:spectral_arrow",
 		"minecraft:trident",
 		"minecraft:wither_skull"
 	]
