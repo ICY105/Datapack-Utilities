@@ -1,22 +1,22 @@
 {
 	"display": {
-		"title": "player_head","description": "","icon": {"item": "minecraft:stone"},
+		"title": "place_custom_block","description": "","icon": {"item": "minecraft:stone"},
 		"hidden":true,
 		"show_toast": false,
 		"announce_to_chat": false
     },
 	"criteria": {
-        "player_head": {
+        "furnace": {
 			"trigger": "minecraft:placed_block",
 			"conditions": {
                 "item": {
-                    "item": "minecraft:player_head"
+                    "nbt":"{du_custom_block:1b}"
                 }
             }
 		}
     },
 	"rewards":{ 
-		"function":"du:player/place_head"
+		"function":"du:player/triggers/place_custom_block"
 	},
 	"parent":"du:base"
 }

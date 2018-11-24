@@ -15,7 +15,7 @@ execute if score timer_2 du_data matches 0 run function du:player/get_moving
 execute if entity @s[nbt={SelectedItem:{ tag:{du_nerf:1b} }}] run function du:player/tool_nerf
 
 #click detect
-function du:clickdetect/clickdetect
+function du:player/clickdetect/clickdetect
 
 #custom durability
 execute if entity @s[nbt={Inventory:[ {tag:{du_dur:{enabled:1b}}} ]}] run function du:player/durability/handle_durability
