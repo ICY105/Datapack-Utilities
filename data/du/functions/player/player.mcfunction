@@ -18,7 +18,7 @@ execute if entity @s[nbt={SelectedItem:{ tag:{du_nerf:1b} }}] run function du:pl
 function du:clickdetect/clickdetect
 
 #custom durability
-execute if entity @s[nbt={SelectedItem:{ tag:{du_durability:1b,Unbreakable:1b} }}] run function du:player/durability/process_tools
+execute if entity @s[nbt={Inventory:[ {tag:{du_dur:{enabled:1b}}} ]}] run function du:player/durability/handle_durability
 
 #damage
 execute if score @s du_health matches 12.. if entity @s[nbt={HurtTime:0s}] run function du:player/damage
