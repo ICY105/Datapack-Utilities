@@ -18,3 +18,4 @@ data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -
 
 #load item
 execute if score out_0 du_data matches 1 run loot replace entity @s weapon.mainhand 1 mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}
+execute if score out_0 du_data matches 0 run replaceitem entity @s weapon.mainhand air

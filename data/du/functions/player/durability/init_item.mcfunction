@@ -78,4 +78,3 @@ execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,id:"minecraft:elytra"}]} run 
 execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,id:"minecraft:crossbow"}]} run data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 326
 execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,id:"minecraft:turtle_helmet"}]} run data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 275
 execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,tag:{Unbreakable:1b}}]} run data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 0
-
