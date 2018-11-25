@@ -36,5 +36,11 @@ execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players
 scoreboard players set is_loaded du_data 0
 function du:base/check_static_region
 
+#Init registry
+function du:world/registry/init
+
+#Call post-init
+function #du:post_init
+
 
 say [Loaded Datapack Utils vX by ImCoolYeah105]
