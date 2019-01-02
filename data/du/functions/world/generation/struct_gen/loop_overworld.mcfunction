@@ -12,7 +12,7 @@ execute if score temp_6 du_data matches 1 if score temp_5 du_data matches 0 if s
 execute if score temp_6 du_data matches 1 if score temp_5 du_data matches 1 if score out_0 du_data matches 1 run scoreboard players set temp_6 du_data 0
 
 #add to temp list if valid
-execute if score temp_6 du_data matches 1 run scoreboard players operation in_0 du_data += temp_4
+execute if score temp_6 du_data matches 1 run scoreboard players operation in_0 du_data += temp_4 du_data
 execute if score temp_6 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_struct_list append from block -29999999 0 1600 RecordItem.tag.du.struct_reg_overworld[0]
 
 #cycle registry
