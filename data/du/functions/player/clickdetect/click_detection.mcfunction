@@ -1,6 +1,6 @@
 scoreboard players operation temp_0 du_data = @s du_uuid
 
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_villager","du_click_1"],NoGravity:1b,Profession:5,NoAI:1,Silent:1,Team:"du_nopush",ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
+execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_villager","du_click_1"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
 execute if entity @s[tag=!du_click_active] as @e[type=villager,tag=du_click_villager] unless score @s du_data matches ..2147483647 run scoreboard players operation @s du_data = temp_0 du_data
 
 tag @s add du_click_active

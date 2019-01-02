@@ -10,7 +10,7 @@
 			"trigger": "minecraft:placed_block",
 			"conditions": {
                 "item": {
-                    "nbt":"{du_custom_block:1b}"
+                    "nbt":"{du_block:1b}"
                 }
             }
 		}

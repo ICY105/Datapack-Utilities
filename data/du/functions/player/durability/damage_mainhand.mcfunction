@@ -13,7 +13,7 @@ execute positioned -29999999 0 1601 if block ~ ~ ~ shulker_box{Items:[{Slot:0b,t
 execute positioned -29999999 0 1601 unless block ~ ~ ~ shulker_box{Items:[{Slot:0b,tag:{du_dur:{item_dur:0}} }]} run function du:player/durability/process_item_durability
 
 #set lore
-data merge block -29999999 0 1602 {Text1:"[\"\",{\"text\":\"Durability: \",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.max_dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false}]"}
+data merge block -29999999 0 1602 {Text1:"[\"\",{\"translate\":\"item.durability\",\"color\":\"gray\",\"italic\":false,\"with\":[{\"nbt\":\"Items[0].tag.du_dur.dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.max_dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false}]}]"}
 data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -29999999 0 1602 Text1
 
 #load item

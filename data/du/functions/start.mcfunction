@@ -8,9 +8,10 @@ scoreboard objectives add du_data dummy
 scoreboard objectives add du_move_x dummy
 scoreboard objectives add du_move_y dummy
 scoreboard objectives add du_move_z dummy
+
 scoreboard objectives add du_sneak minecraft.custom:minecraft.sneak_time
 scoreboard objectives add du_jump minecraft.custom:minecraft.jump
-
+scoreboard objectives add du_leave_game minecraft.custom:minecraft.leave_game
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
 
 scoreboard objectives add du_health dummy
@@ -32,12 +33,11 @@ scoreboard players operation rng_seed du_data = out_0 du_data
 #ID stuff
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
 
-#Static Region
+#Init Modules
 scoreboard players set is_loaded du_data 0
 function du:base/check_static_region
-
-#Init registry
-function du:world/registry/init
+function du:world/init
+function du:player/init
 
 #Call post-init
 function #du:post_init

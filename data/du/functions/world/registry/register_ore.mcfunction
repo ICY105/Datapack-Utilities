@@ -12,7 +12,7 @@
 # If this if matches the same score, generate your ore.
 #
 # Immediately after calling this function, you can run this command to configure biome options:
-# data modify block -29999999 0 1600 RecordItem.tag.du.ore_reg[0] merge value {biomes:[#],isBlacklist:0b}
+# data modify block -29999999 0 1600 RecordItem.tag.du.ore_reg_<dimension>[0] merge value {biomes:[#,#,#,...],isBlacklist:0b}
 # This currently supports listing up to 24 biome IDs.
 #
 scoreboard players set out_0 du_data 0
