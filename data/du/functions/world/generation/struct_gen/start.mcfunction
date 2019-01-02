@@ -18,9 +18,9 @@ execute if score in_2 du_data matches -1 run function du:world/generation/struct
 execute if score in_2 du_data matches 0 run function du:world/generation/struct_gen/get_overworld
 execute if score in_2 du_data matches 1 run function du:world/generation/struct_gen/get_end
 
-execute if score in_0 du_data matches 1..1000 run scoreboard players set in_0 du_data 1000
-execute if score in_0 du_data matches 1.. run function du:math/random
-execute if score out_0 du_data matches 0..1000 run function du:world/generation/struct_gen/get_weighted_struct
+execute if score in_0 du_data matches ..1000 run scoreboard players set in_0 du_data 1000
+function du:math/random
+function du:world/generation/struct_gen/get_weighted_struct
 
 #generate struct
 execute store result score in_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.temp_struct_list[0].id
