@@ -16,9 +16,3 @@ Datapack Utils currently Handles:
 * Timer scoreboards
 * Various player stats
 * Extra block tags for groups of blocks that should have tags
-
-Check out the [wiki](https://github.com/ImCoolYeah105/Datapack-Utilities/wiki) for more information on how to use these features.
-
-## Download
-
-Moved to curseforge: https://minecraft.curseforge.com/projects/datapack-utils
