@@ -14,6 +14,10 @@ execute if score timer_2 du_data matches 0 run function du:player/get_moving
 #click detect
 execute if data entity @s Inventory[].tag.du_click_detect run function du:player/clickdetect/clickdetect
 
+#custom blocks (click detect method)
+execute if entity @s[tag=du_right_click] store result score in_0 du_data run data get entity @s SelectedItem.tag.du_block_id
+execute if entity @s[tag=du_right_click] unless score in_0 du_data matches 0 run function du:player/blocks/handle_custom_block
+
 #custom durability
 execute if data entity @s Inventory[].tag.du_dur.enabled run function du:player/durability/handle_durability
 
