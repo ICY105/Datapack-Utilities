@@ -16,7 +16,7 @@
 		}
     },
 	"rewards":{ 
-		"function":"du:player/place_head"
+		"function":"du:player/triggers/place_head"
 	},
 	"parent":"du:base"
 }
