@@ -1,0 +1,36 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+		  "type": "minecraft:alternatives",
+          "children": [
+		    {
+			  "type": "minecraft:item",
+              "name": "minecraft:purple_glazed_terracotta",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{du_auto_smelt:1b}"
+                  }
+                }
+              ]
+			},
+		    {
+              "type": "minecraft:item",
+              "name": "minecraft:purple_terracotta"
+			}
+		  ]
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ]
+    }
+  ]
+}

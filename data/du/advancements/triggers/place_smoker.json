@@ -1,0 +1,22 @@
+{
+	"display": {
+		"title": "smoker","description": "","icon": {"item": "minecraft:stone"},
+		"hidden":true,
+		"show_toast": false,
+		"announce_to_chat": false
+    },
+	"criteria": {
+        "furnace": {
+			"trigger": "minecraft:placed_block",
+			"conditions": {
+                "item": {
+                    "item": "minecraft:smoker"
+                }
+            }
+		}
+    },
+	"rewards":{ 
+		"function":"du:player/triggers/place_furnace"
+	},
+	"parent":"du:base"
+}

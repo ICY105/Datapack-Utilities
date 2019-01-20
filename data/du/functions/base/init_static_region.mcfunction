@@ -3,7 +3,7 @@ scoreboard players set temp_0 du_data 0
 execute unless score $ensconcer.initiated eglobal matches 1 store success score temp_0 du_data run function ensconcer:create_burrow
 
 #Notification
-execute unless score temp_0 du_data matches 1 unless block -29999999 0 1600 jukebox run tellraw @a {"text":"[DU] Datapack setup complete!","color":"dark_green"}
+execute unless score temp_0 du_data matches 1 unless block -29999999 0 1600 jukebox run tellraw @a {"text":"[DU] Datapack setup complete! Run /reload to get started.","color":"dark_green"}
 
 #setup
 scoreboard players set is_loaded du_data 1

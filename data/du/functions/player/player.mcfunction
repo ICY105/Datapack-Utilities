@@ -12,7 +12,7 @@ scoreboard players set @s du_jump 0
 execute if score timer_2 du_data matches 0 run function du:player/get_moving
 
 #click detect
-execute if data entity @s Inventory[].tag.du_click_detect run function du:player/clickdetect/clickdetect
+function du:player/clickdetect/clickdetect
 
 #custom blocks (click detect method)
 execute if entity @s[tag=du_right_click] store result score in_0 du_data run data get entity @s SelectedItem.tag.du_block_id
