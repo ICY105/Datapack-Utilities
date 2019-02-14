@@ -15,4 +15,5 @@ Datapack Utils currently Handles:
 * Custom block placement methods
 * Timer scoreboards
 * Various player stats
+* Biome Detection
 * Extra block tags for groups of blocks that should have tags
