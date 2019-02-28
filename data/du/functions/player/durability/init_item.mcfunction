@@ -4,9 +4,9 @@ data modify block ~ ~ ~ Items[0].tag.du_dur.dur set from block ~ ~ ~ Items[0].ta
 data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 0
 data modify block ~ ~ ~ Items[0].tag.du_dur.damage set value 0
 
-data merge block -29999999 0 1602 {Text1:"[\"\",{\"text\":\"Durability: \",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.max_dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false}]"}
-execute unless block ~ ~ ~ shulker_box{Items:[{Slot:0b,tag:{display:{Lore:[]}}}]} run data modify block ~ ~ ~ Items[0].tag.display.Lore set value []
-execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,tag:{display:{Lore:[]}}}]} run data modify block ~ ~ ~ Items[0].tag.display.Lore prepend from block -29999999 0 1602 Text1
+data merge block -29999999 0 1602 {Text1:"[{\"text\":\"Durability: \",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.max_dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false}]"}
+execute unless data block ~ ~ ~ Items[0].tag.display.Lore run data modify block ~ ~ ~ Items[0].tag.display.Lore set value []
+data modify block ~ ~ ~ Items[0].tag.display.Lore append from block -29999999 0 1602 Text1
 
 execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,id:"minecraft:golden_sword"}]} run data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 32
 execute if block ~ ~ ~ shulker_box{Items:[{Slot:0b,id:"minecraft:golden_pickaxe"}]} run data modify block ~ ~ ~ Items[0].tag.du_dur.item_dur set value 32

@@ -16,7 +16,7 @@ execute positioned -29999999 0 1601 unless block ~ ~ ~ shulker_box{Items:[{Slot:
 
 #set lore
 data merge block -29999999 0 1602 {Text1:"[\"\",{\"text\":\"Durability: \",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false},{\"text\":\"/\",\"color\":\"gray\",\"italic\":false},{\"nbt\":\"Items[0].tag.du_dur.max_dur\",\"block\":\"-29999999 0 1601\",\"color\":\"gray\",\"italic\":false}]"}
-data modify block -29999999 0 1601 Items[0].tag.display.Lore[0] set from block -29999999 0 1602 Text1
+data modify block -29999999 0 1601 Items[0].tag.display.Lore[-1] set from block -29999999 0 1602 Text1
 
 #load item
 execute if score out_0 du_data matches 1 run loot replace entity @s weapon.offhand 1 mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}
