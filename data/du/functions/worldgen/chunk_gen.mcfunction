@@ -1,5 +1,5 @@
 
-execute if entity @s[nbt={Dimension:-1}] run function #du:chunk_gen_nether
-execute if entity @s[nbt={Dimension:0}] run function #du:chunk_gen
-execute if entity @s[nbt={Dimension:1}] run function #du:chunk_gen_end
+execute if score in_0 du_data matches -1 run function #du:chunk_gen_nether
+execute if score in_0 du_data matches 0 run function #du:chunk_gen
+execute if score in_0 du_data matches 1 run function #du:chunk_gen_end
 
