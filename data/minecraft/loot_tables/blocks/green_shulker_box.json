@@ -7,18 +7,6 @@
         {
           "type": "minecraft:alternatives",
           "children": [
-            {
-              "type": "minecraft:dynamic",
-              "name": "minecraft:contents",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "nbt": "{phi:{drop_contents:true}}"
-                  }
-                }
-              ]
-            },
 			{
               "type": "minecraft:dynamic",
               "name": "minecraft:contents",

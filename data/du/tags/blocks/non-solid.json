@@ -45,6 +45,8 @@
 		"minecraft:bell",
 		"minecraft:lantern",
 		"minecraft:grindstone",
-		"minecraft:stonecutter"
+		"minecraft:stonecutter",
+		"minecraft:cobweb",
+		"minecraft:piston_head"
 	]
 }

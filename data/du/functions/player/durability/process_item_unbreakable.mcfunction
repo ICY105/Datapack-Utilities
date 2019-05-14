@@ -2,9 +2,9 @@
 #unbreaking
 scoreboard players set temp_5 du_data 0
 scoreboard players set temp_4 du_data 0
-execute if block -29999999 0 1601 shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 1
-execute if block -29999999 0 1601 shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 2s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 2
-execute if block -29999999 0 1601 shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 3s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 3
+execute if block -29999999 0 1601 green_shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 1s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 1
+execute if block -29999999 0 1601 green_shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 2s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 2
+execute if block -29999999 0 1601 green_shulker_box{Items:[{Slot:0b,tag:{Enchantments: [{lvl: 3s, id: "minecraft:unbreaking"}]}}]} run scoreboard players set temp_5 du_data 3
 
 execute if score temp_5 du_data matches 1..3 run scoreboard players set in_0 du_data 100
 execute if score temp_5 du_data matches 1..3 run function du:math/random
