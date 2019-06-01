@@ -38,12 +38,14 @@ scoreboard players set #version du_data -20005
 
 #Init Modules
 scoreboard players set is_loaded du_data 0
+scoreboard players set worldgen du_data 0
 function du:base/check_static_region
 function du:world/init
 function du:player/init
 
 #Call post-init
 function #du:post_init
+execute if score is_loaded du_data matches 0 run scoreboard players set worldgen du_data 0
 
-
-say [Loaded Datapack Utils v2.0 Prerelease 5 by ImCoolYeah105]
+scoreboard players set du_ver du_data -2000007
+tellraw @a [{"text":"[Loaded Datapack Utils v2.0 Prerelease 7]","color":"dark_green"}]
