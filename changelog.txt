@@ -1,5 +1,0 @@
-Loaded chunk area is now processed automatically, if available
-Custom crafter now ejects items in invalid slots
-Added version checking capability
-Added burrow in nether and end
-Fixed "restore_hotbar" function deleting items
