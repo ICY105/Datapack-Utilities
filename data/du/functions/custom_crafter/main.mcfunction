@@ -11,7 +11,7 @@ replaceitem block -29999999 0 1601 container.16 air
 replaceitem block -29999999 0 1601 container.20 air
 replaceitem block -29999999 0 1601 container.21 air
 replaceitem block -29999999 0 1601 container.22 air
-loot spawn ~ ~1 ~ mine -29999999 0 1601 minecraft:diamond_pickaxe{drop_contents:true}
+execute if block -29999999 0 1601 #du:internal/chest-like{Items:[{}]} run loot spawn ~ ~1 ~ mine -29999999 0 1601 minecraft:diamond_pickaxe{drop_contents:true}
 
 execute unless block ~ ~ ~ #du:internal/chest-like{Items:[{Slot:0b,tag:{du_gui:1b}}]} run replaceitem block ~ ~ ~ container.0 minecraft:gray_stained_glass_pane{du_gui:1b,display:{Name:"\"\""}} 1
 execute unless block ~ ~ ~ #du:internal/chest-like{Items:[{Slot:1b,tag:{du_gui:1b}}]} run replaceitem block ~ ~ ~ container.1 minecraft:gray_stained_glass_pane{du_gui:1b,display:{Name:"\"\""}} 1
