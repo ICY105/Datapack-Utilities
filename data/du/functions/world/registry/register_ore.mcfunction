@@ -35,6 +35,6 @@ execute unless score in_4 du_data <= in_5 du_data run scoreboard players set out
 #checks dim ID
 execute unless score in_6 du_data matches -1..1 run scoreboard players set out_0 du_data -1
 
-execute if score out_0 du_data matches 0 if score in_6 du_data matches 0 run function du:world/registry/register_ore_overworld
-execute if score out_0 du_data matches 0 if score in_6 du_data matches -1 run function du:world/registry/register_ore_nether
-execute if score out_0 du_data matches 0 if score in_6 du_data matches 1 run function du:world/registry/register_ore_end
+execute if score out_0 du_data matches 0 if score in_6 du_data matches 0 in minecraft:overworld run function du:world/registry/register_ore_overworld
+execute if score out_0 du_data matches 0 if score in_6 du_data matches -1 in minecraft:overworld run function du:world/registry/register_ore_nether
+execute if score out_0 du_data matches 0 if score in_6 du_data matches 1 in minecraft:overworld run function du:world/registry/register_ore_end

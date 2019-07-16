@@ -26,6 +26,6 @@ execute unless score in_2 du_data matches 0..1 run scoreboard players set out_0 
 #checks dim ID
 execute unless score in_3 du_data matches -1..1 run scoreboard players set out_0 du_data -1
 
-execute if score out_0 du_data matches 0 if score in_3 du_data matches 0 run function du:world/registry/register_struct_overworld
-execute if score out_0 du_data matches 0 if score in_3 du_data matches -1 run function du:world/registry/register_struct_nether
-execute if score out_0 du_data matches 0 if score in_3 du_data matches 1 run function du:world/registry/register_struct_end
+execute if score out_0 du_data matches 0 if score in_3 du_data matches 0 in minecraft:overworld run function du:world/registry/register_struct_overworld
+execute if score out_0 du_data matches 0 if score in_3 du_data matches -1 in minecraft:overworld run function du:world/registry/register_struct_nether
+execute if score out_0 du_data matches 0 if score in_3 du_data matches 1 in minecraft:overworld run function du:world/registry/register_struct_end

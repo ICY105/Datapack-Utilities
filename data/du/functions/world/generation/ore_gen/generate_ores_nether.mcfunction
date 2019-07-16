@@ -21,3 +21,4 @@ data modify block -29999999 0 1600 RecordItem.tag.du.ore_reg_nether append from 
 data remove block -29999999 0 1600 RecordItem.tag.du.ore_reg_nether[0]
 execute store result score temp_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.ore_reg_nether[0].id
 execute unless score temp_0 du_data = in_3 du_data run function du:world/generation/ore_gen/generate_ores_nether
+

@@ -25,7 +25,9 @@ scoreboard players operation temp_8 du_data += out_0 du_data
 
 ### transfer scores
 #id
-execute store result score temp_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.ore_reg_overworld[0].id
+execute if score in_2 du_data matches 1 store result score temp_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.ore_reg_end[0].id
+execute if score in_2 du_data matches 0 store result score temp_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.ore_reg_overworld[0].id
+execute if score in_2 du_data matches -1 store result score temp_0 du_data run data get block -29999999 0 1600 RecordItem.tag.du.ore_reg_nether[0].id
 #y value
 scoreboard players operation temp_1 du_data = temp_5 du_data
 #x value
