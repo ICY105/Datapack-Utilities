@@ -9,24 +9,12 @@
           "children": [
             {
 			  "type": "minecraft:item",
-			  "name": "minecraft:air",
-			  "conditions": [
-				{
-				  "condition": "minecraft:match_tool",
-				  "predicate": {
-					"nbt": "{du_trash:1b}"
-				  }
-				}
-			  ]
-			},
-			{
-			  "type": "minecraft:item",
-              "name": "minecraft:stone",
+              "name": "minecraft:air",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
                   "predicate": {
-                    "nbt": "{du_auto_smelt:1b}"
+                    "nbt": "{du_trash:1b}"
                   }
                 }
               ]
@@ -48,7 +36,7 @@
                   }
                 }
               ],
-              "name": "minecraft:stone"
+              "name": "minecraft:grass_block"
             },
             {
               "type": "minecraft:item",
@@ -57,7 +45,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:cobblestone"
+              "name": "minecraft:dirt"
             }
           ]
         }

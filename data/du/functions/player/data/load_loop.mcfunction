@@ -12,4 +12,4 @@ execute if score out_0 du_data matches 0 run data remove block -29999999 0 1600 
 
 #loop
 scoreboard players remove in_0 du_data 1
-execute if score out_0 du_data matches 0 if score in_0 du_data matches 1.. run function du:player/data/loop
+execute if score out_0 du_data matches 0 if score in_0 du_data matches 1.. run function du:player/data/load_loop

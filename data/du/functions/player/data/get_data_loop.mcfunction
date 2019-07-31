@@ -9,4 +9,4 @@ execute unless score temp_0 du_data = @s du_uuid run data remove block -29999999
 
 #loop
 scoreboard players remove in_0 du_data 1
-execute unless score temp_0 du_data = @s du_uuid if score in_0 du_data matches 1.. run function du:player/data/loop
+execute unless score temp_0 du_data = @s du_uuid if score in_0 du_data matches 1.. run function du:player/data/get_data_loop

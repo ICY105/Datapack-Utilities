@@ -16,5 +16,8 @@ execute if score worldgen du_data matches 1 if score is_loaded du_data matches 1
 execute if score timer_20 du_data matches 2 as @e[tag=du_furnace] at @s run function du:custom_furnace/main
 execute as @e[tag=du_fur_active] at @s run function du:custom_furnace/process_smelt
 
+#Custom Campire
+execute if score timer_20 du_data matches 3 as @e[tag=du_campfire] at @s run function du:custom_campfire/main
+
 #Custom Crafter
-execute as @e[tag=du_crafter] at @s if entity @p[distance=..6] run function du:custom_crafter/main
+execute as @e[tag=du_crafter] at @s if entity @p[distance=..8] run function du:custom_crafter/main

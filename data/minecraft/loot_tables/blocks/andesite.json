@@ -19,18 +19,6 @@
                 }
               ]
 			},
-			{
-			  "type": "minecraft:item",
-              "name": "minecraft:stone",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "nbt": "{du_auto_smelt:1b}"
-                  }
-                }
-              ]
-			},
             {
               "type": "minecraft:item",
               "conditions": [
@@ -38,7 +26,7 @@
                   "condition": "minecraft:survives_explosion"
                 }
               ],
-              "name": "minecraft:cobblestone"
+              "name": "minecraft:andesite"
             }
           ]
         }

@@ -46,5 +46,5 @@ function #du:post_init
 execute if score is_loaded du_data matches 0 run scoreboard players set worldgen du_data 0
 
 #version: (-)XX.XX.XX.XX
-scoreboard players set du_ver du_data -2000008
-tellraw @a [{"text":"[Loaded Datapack Utils v2.0 Prerelease 8]","color":"dark_green"}]
+scoreboard players set du_ver du_data 2000000
+schedule function du:start_2 10t
