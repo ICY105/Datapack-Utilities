@@ -1,0 +1,66 @@
+{
+  "type": "minecraft:block",
+  "pools" : [
+	{
+      "rolls": 1,
+      "entries": [
+	    {
+		  "type": "minecraft:item",
+		  "name": "minecraft:spawner",
+		  "functions": [
+		    {
+			  "function":"set_nbt",
+			  "tag":"{du_spawner:1b,BlockEntityTag:{}}"
+			},
+		    {
+			  "function":"copy_nbt",
+			  "source":"block_entity",
+			  "ops": [
+				{
+			      "source":"SpawnData",
+				  "target":"BlockEntityTag.SpawnData",
+				  "op":"replace"
+				},
+				{
+			      "source":"SpawnPotentials",
+				  "target":"BlockEntityTag.SpawnPotentials",
+				  "op":"replace"
+				},
+				{
+			      "source":"MinSpawnDelay",
+				  "target":"BlockEntityTag.MinSpawnDelay",
+				  "op":"replace"
+				},
+				{
+			      "source":"MaxSpawnDelay",
+				  "target":"BlockEntityTag.MaxSpawnDelay",
+				  "op":"replace"
+				},
+				{
+			      "source":"MaxNearbyEntities",
+				  "target":"BlockEntityTag.MaxNearbyEntities",
+				  "op":"replace"
+				},
+				{
+			      "source":"RequiredPlayerRange",
+				  "target":"BlockEntityTag.RequiredPlayerRange",
+				  "op":"replace"
+				},
+				{
+			      "source":"SpawnCount",
+				  "target":"BlockEntityTag.SpawnCount",
+				  "op":"replace"
+				},
+				{
+			      "source":"SpawnRange",
+				  "target":"BlockEntityTag.SpawnRange",
+				  "op":"replace"
+				}
+			  ]
+			}
+		  ]
+		}
+	  ]
+	}
+  ]
+}

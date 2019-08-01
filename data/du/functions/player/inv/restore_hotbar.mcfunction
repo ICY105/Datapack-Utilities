@@ -1,0 +1,1 @@
+loot replace entity @s hotbar.0 mine -29999999 0 1601 minecraft:golden_pickaxe{drop_contents:true}

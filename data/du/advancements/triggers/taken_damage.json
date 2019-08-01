@@ -3,8 +3,7 @@
 		"title": "entity_hurt_player","description": "","icon": {"item": "minecraft:stone"},
 		"hidden":true,
 		"show_toast": false,
-		"announce_to_chat": false,
-		"parent":"du:base"
+		"announce_to_chat": false
     },
 	"criteria": {
         "entity_hurt_player": {
@@ -13,5 +12,6 @@
     },
 	"rewards":{ 
 		"function":"du:player/durability/process_armor"
-	}
+	},
+	"parent":"du:base"
 }

@@ -1,0 +1,15 @@
+{
+	"values":[
+		"#du:air",
+		"#minecraft:leaves",
+		"#minecraft:logs",
+		"#minecraft:saplings",
+		"#du:plants",
+		"minecraft:brown_mushroom_block",
+		"minecraft:red_mushroom_block",
+		"minecraft:snow",
+		"minecraft:mossy_cobblestone",
+		"minecraft:pumpkin",
+		"minecraft:melon"
+	]
+}

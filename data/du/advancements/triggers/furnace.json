@@ -3,8 +3,7 @@
 		"title": "furnace","description": "","icon": {"item": "minecraft:stone"},
 		"hidden":true,
 		"show_toast": false,
-		"announce_to_chat": false,
-		"parent":"du:base"
+		"announce_to_chat": false
     },
 	"criteria": {
         "furnace": {
@@ -18,5 +17,6 @@
     },
 	"rewards":{ 
 		"function":"du:player/triggers/place_furnace"
-	}
+	},
+	"parent":"du:base"
 }

@@ -1,19 +1,7 @@
 {
 	"values":[
-		"minecraft:dandelion",
-		"minecraft:poppy",
-		"minecraft:blue_orchid",
-		"minecraft:allium",
-		"minecraft:azure_bluet",
-		"minecraft:red_tulip",
-		"minecraft:orange_tulip",
-		"minecraft:white_tulip",
-		"minecraft:pink_tulip",
-		"minecraft:oxeye_daisy",
-		"minecraft:lilac",
-		"minecraft:rose_bush",
-		"minecraft:peony",
-		"minecraft:sunflower",
+		"#du:flowers",
+		"#du:crops",
 		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
@@ -24,6 +12,10 @@
 		"minecraft:lily_pad",
 		"minecraft:tall_grass",
 		"minecraft:seagrass",
-		"minecraft:large_fern"
+		"minecraft:kelp",
+		"minecraft:large_fern",
+		"minecraft:bamboo",
+		"minecraft:chorus_flower",
+		"minecraft:chorus_plant"
 	]
 }

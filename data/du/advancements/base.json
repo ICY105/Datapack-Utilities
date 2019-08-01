@@ -1,12 +1,16 @@
 {
 	"display": {
-		"title": "DU","description": "","icon": {"item": "minecraft:stone"},
+		"title": "Datapack Utils",
+		"description": "Running Datapack Utils by ImCoolYeah105",
+		"icon": {"item": "minecraft:crafting_table"},
 		"show_toast": false,
-		"announce_to_chat": false
+		"announce_to_chat": false,
+		"frame": "goal",
+		"background":"minecraft:textures/block/obsidian.png"
     },
 	"criteria": {
         "always": {
-			"trigger": "minecraft:impossible"
+			"trigger": "minecraft:tick"
 		}
     }
 }
