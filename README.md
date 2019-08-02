@@ -5,15 +5,12 @@ Need help or want to stay up-to-date with development? Join the discord server: 
 
 Datapack Utils currently Handles:
 
-* Some Math functions, including RNG.
+* World generation: including custom ores and structures
+* NBT Crafting APIs for crafting tables, furnaces, and campfires
+* Some Math functions, including a pRNG.
 * Villager based Left/Right click detection. No Carrot on a Stick needed.
-* Custom NBT Crafting APIs, both table and furnace.
-* Inventory Management (currently get count and get damage)
-* Custom Durability for Unbreakable Items
-* Block-Locating Raycasting
-* Chunk-base world generation in all dimensions
-* Custom block placement methods
+* Custom Durability for any item
 * Timer scoreboards
 * Various player stats
 * Biome Detection
-* Extra block tags for groups of blocks that should have tags
+* Extra block and entity tags
