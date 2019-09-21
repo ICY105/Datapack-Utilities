@@ -1,4 +1,4 @@
-scoreboard players operation in_0 du_data = temp_0 du_data
+
 execute if score temp_4 du_data matches 1.. positioned ~0 ~0 ~0 if block ~ ~ ~ #du:internal/valid_gen_ore run function du:world/generation/ore_gen/generate_3
 execute if score temp_4 du_data matches 2.. positioned ~0 ~1 ~0 if block ~ ~ ~ #du:internal/valid_gen_ore run function du:world/generation/ore_gen/generate_3
 execute if score temp_4 du_data matches 3.. positioned ~1 ~0 ~0 if block ~ ~ ~ #du:internal/valid_gen_ore run function du:world/generation/ore_gen/generate_3

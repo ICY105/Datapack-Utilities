@@ -25,11 +25,6 @@ team modify du_nopush collisionRule never
 kill @e[type=area_effect_cloud,tag=du_spawn_chunks]
 summon area_effect_cloud ~ 0 ~ {Tags:["du_spawn_chunks"],Duration:2000000000}
 
-#Seed for RNG
-execute store result score in_0 du_data run data get entity @e[tag=du_spawn_chunks,limit=1] UUIDLeast 0.0000000001
-function du:math/abs
-scoreboard players operation rng_seed du_data = out_0 du_data
-
 #ID stuff
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
 
@@ -43,7 +38,6 @@ function du:player/init
 
 #Call post-init
 function #du:post_init
-execute if score is_loaded du_data matches 0 run scoreboard players set worldgen du_data 0
 
 #version: (-)XX.XX.XX.XX
 scoreboard players set du_ver du_data 2000000

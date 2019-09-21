@@ -1,13 +1,21 @@
 
+##in_2: chunk x pos
+##in_3: chunk z pos
+##in_4: chunk dimension
+##in_5: map seed
+#>in_6: local biome
+
 #common functions
 function du:world/get_biome_id
-scoreboard players operation in_1 du_data = out_0 du_data
-execute store result score in_2 du_data run data get entity @s Dimension
+scoreboard players operation in_6 du_data = out_0 du_data
 
 #per super chunk gen
 execute if score reg_id du_data matches 2.. in minecraft:overworld run function du:world/generation/struct_gen/start
 
 #per chunk gen
+forceload add ~-12 ~-12 ~12 ~12
+forceload remove ~-12 ~-12 ~12 ~12
+
 execute positioned ~16 0 ~16 run function du:world/generation/chunk_gen
 execute positioned ~16 0 ~ run function du:world/generation/chunk_gen
 execute positioned ~16 0 ~-16 run function du:world/generation/chunk_gen
@@ -20,5 +28,6 @@ execute positioned ~-16 0 ~16 run function du:world/generation/chunk_gen
 execute positioned ~-16 0 ~ run function du:world/generation/chunk_gen
 execute positioned ~-16 0 ~-16 run function du:world/generation/chunk_gen
 
-setblock ~ ~ ~ barrier
+#mark as generated
+setblock ~ 0 ~ barrier
 

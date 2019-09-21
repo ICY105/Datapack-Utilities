@@ -10,6 +10,9 @@
 		"minecraft:snow",
 		"minecraft:mossy_cobblestone",
 		"minecraft:pumpkin",
-		"minecraft:melon"
+		"minecraft:melon",
+		"minecraft:fire",
+		"minecraft:chorus_plant",
+		"minecraft:chorus_flower"
 	]
 }

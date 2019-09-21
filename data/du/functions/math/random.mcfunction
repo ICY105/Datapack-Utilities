@@ -1,17 +1,7 @@
 
-#in_0: max output value (0-100,000,000)
-#out_0: generated random number
+##in_0: max output value (0-2^16)
+#>out_0: generated random number
 
-scoreboard players set temp_0 du_data 22695477
-scoreboard players set temp_1 du_data 1
-scoreboard players set temp_2 du_data 2147483647
-scoreboard players set temp_3 du_data -1
-
-scoreboard players operation rng_seed du_data *= temp_0 du_data
-scoreboard players operation rng_seed du_data += temp_1 du_data
-scoreboard players operation rng_seed du_data %= temp_2 du_data
-
-scoreboard players operation out_0 du_data = rng_seed du_data
+loot replace block -29999999 0 1601 container.0 loot du:random
+execute store result score out_0 du_data run data get block -29999999 0 1601 Items[0].tag.AttributeModifiers[0].Amount 2000000
 scoreboard players operation out_0 du_data %= in_0 du_data
-execute if score out_0 du_data matches ..-1 run scoreboard players operation out_0 du_data *= temp_3 du_data
-execute if score in_0 du_data matches 0 run scoreboard players set out_0 du_data 0

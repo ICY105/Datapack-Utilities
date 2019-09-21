@@ -20,6 +20,8 @@
 		
 		"minecraft:end_stone",
 		"minecraft:netherrack",
-		"minecraft:soul_sand"
+		"minecraft:soul_sand",
+		"minecraft:nether_quartz_ore",
+		"minecraft:magma_block"
 	]
 }
