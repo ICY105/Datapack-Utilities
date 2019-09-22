@@ -1,7 +1,1 @@
 
-Improved speed and accuracy of Random functions
-Optimized worldgen functions and fixed some bugs/inconsistencies
-* Structure generation is now (theoretically) seeded
-* Medium/Large structures now have a minimum distance from each other
-* Fixes to generating structures/ores in other dimensions
-Added get weather function

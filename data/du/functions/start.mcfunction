@@ -40,5 +40,5 @@ function du:player/init
 function #du:post_init
 
 #version: (-)XX.XX.XX.XX
-scoreboard players set du_ver du_data 2000000
+scoreboard players set du_ver du_data 2000001
 schedule function du:start_2 10t
