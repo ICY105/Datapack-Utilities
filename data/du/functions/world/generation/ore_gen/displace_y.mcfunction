@@ -1,3 +1,4 @@
+
 execute if score temp_1 du_data matches 0..15 positioned ~ 0 ~ run function du:world/generation/ore_gen/displace_y_2
 execute if score temp_1 du_data matches 16..31 positioned ~ 16 ~ run function du:world/generation/ore_gen/displace_y_2
 execute if score temp_1 du_data matches 32..47 positioned ~ 32 ~ run function du:world/generation/ore_gen/displace_y_2

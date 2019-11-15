@@ -1,5 +1,6 @@
 {
 	"values":[
-		"du:main"
+		"du:main",
+		"du:world/tick"
 	]
 }

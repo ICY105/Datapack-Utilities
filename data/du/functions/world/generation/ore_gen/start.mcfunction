@@ -1,7 +1,7 @@
 
 ##in_7: min y
 ##in_8: max y
-##in_9: min veins
+##in_9: min veins -> total veins
 ##in_10: max veins
 ##in_11: min vein size
 ##in_12: max vein size
@@ -13,4 +13,4 @@ function du:math/random
 scoreboard players operation in_9 du_data += out_0 du_data
 
 ## run generate function
-function du:world/generation/ore_gen/start_2
+execute if score in_9 du_data matches 1.. run function du:world/generation/ore_gen/start_2

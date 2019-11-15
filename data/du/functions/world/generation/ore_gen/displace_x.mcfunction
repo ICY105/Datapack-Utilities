@@ -1,3 +1,4 @@
+
 execute if score temp_2 du_data matches 0 positioned ~ ~ ~ run function du:world/generation/ore_gen/displace_z
 execute if score temp_2 du_data matches 1 positioned ~1 ~ ~ run function du:world/generation/ore_gen/displace_z
 execute if score temp_2 du_data matches 2 positioned ~2 ~ ~ run function du:world/generation/ore_gen/displace_z

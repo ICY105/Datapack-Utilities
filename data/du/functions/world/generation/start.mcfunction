@@ -30,4 +30,4 @@ execute store result score in_4 du_data run data get entity @s Dimension
 execute store result score in_5 du_data run seed
 
 #alter position
-execute align xz positioned ~0.5 0.5 ~0.5 run function du:world/generation/position_x
+execute align xz positioned ~0.5 0.5 ~0.5 run function du:world/generation/shift_x
