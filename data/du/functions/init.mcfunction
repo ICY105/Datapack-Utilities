@@ -24,4 +24,4 @@ team modify du_nopush collisionRule never
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
 
 #version: (-)XX.XX.XX.XX
-scoreboard players set $du.ver load 2000200
+scoreboard players set $du.ver load 2000201
