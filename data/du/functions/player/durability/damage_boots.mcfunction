@@ -17,5 +17,3 @@ data modify block -29999999 0 1601 Items[2].tag.display.Lore[-1] set from block 
 #destroy item if broken
 execute if score out_0 du_data matches 0 run replaceitem block -29999999 0 1601 container.2 minecraft:leather_boots{du_gui:1b}
 execute if score out_0 du_data matches 0 run playsound minecraft:entity.item.break player @a[distance=..16]
-
-clone -29999999 0 1601 -29999999 0 1601 ~ ~-1 ~
