@@ -24,6 +24,6 @@ execute if score $world.reg_id du_data matches 2.. run function du:world/generat
 execute if score $world.reg_id du_data matches 2.. run function du:world/generation/ore_gen/registry_check
 
 #run custom functions
-execute if score $du.dim du_data matches -1 run function #du:chunk_gen/the_nether
-execute if score $du.dim du_data matches 0 run function #du:chunk_gen/overworld
-execute if score $du.dim du_data matches 1 run function #du:chunk_gen/the_end
+execute if score $world.dim du_data matches -1 run function #du:chunk_gen/the_nether
+execute if score $world.dim du_data matches 0 run function #du:chunk_gen/overworld
+execute if score $world.dim du_data matches 1 run function #du:chunk_gen/the_end
