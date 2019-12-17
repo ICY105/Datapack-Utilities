@@ -27,12 +27,12 @@ execute if score out_1 du_data matches 0 if score out_0 du_data matches 1 run sc
 ### Self Active
 
 #dynamic
-execute if score out_1 du_data matches 0 if block ~ ~1 ~ #du:internal/redstone/weak_power_top unless block ~ ~1 ~ #du:internal/redstone/strong_power_top[power=0] unless block ~ ~1 ~ #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
-execute if score out_1 du_data matches 0 if block ~ ~-1 ~ #du:internal/redstone/weak_power_bottom unless block ~ ~-1 ~ #du:internal/redstone/weak_power_bottom[power=0] unless block ~ ~-1 ~ #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
-execute if score out_1 du_data matches 0 if block ~1 ~ ~ #du:internal/redstone/weak_power_side unless block ~1 ~ ~ #du:internal/redstone/weak_power_side[power=0] unless block ~1 ~ ~ #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
-execute if score out_1 du_data matches 0 if block ~-1 ~ ~ #du:internal/redstone/weak_power_side unless block ~-1 ~ ~ #du:internal/redstone/weak_power_side[power=0] unless block ~-1 ~ ~ #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
-execute if score out_1 du_data matches 0 if block ~ ~ ~1 #du:internal/redstone/weak_power_side unless block ~ ~ ~1 #du:internal/redstone/weak_power_side[power=0] unless block ~ ~ ~1 #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
-execute if score out_1 du_data matches 0 if block ~ ~ ~-1 #du:internal/redstone/weak_power_side unless block ~ ~ ~-1 #du:internal/redstone/weak_power_side[power=0] unless block ~ ~ ~-1 #du:internal/redstone/weak_power_top[powered=false] run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~ ~01 ~ if block ~ ~ ~ #du:internal/redstone/weak_power_top if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~ ~-1 ~ if block ~ ~-1 ~ #du:internal/redstone/weak_power_bottom if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~01 ~ ~ if block ~1 ~ ~ #du:internal/redstone/weak_power_side if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~-1 ~ ~ if block ~-1 ~ ~ #du:internal/redstone/weak_power_side if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~ ~ ~01 if block ~ ~ ~1 #du:internal/redstone/weak_power_side if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
+execute if score out_1 du_data matches 0 positioned ~ ~ ~-1 if block ~ ~ ~-1 #du:internal/redstone/weak_power_side if predicate du:block/is_emitting_signal run scoreboard players set out_1 du_data 1
 
 #redstone torch
 execute if block ~ ~1 ~ minecraft:redstone_wall_torch[lit=true] run scoreboard players set out_1 du_data 1

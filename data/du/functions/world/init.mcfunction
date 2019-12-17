@@ -1,8 +1,8 @@
 
 #clear existing registry
-data modify block -29999999 0 1600 RecordItem.tag.du merge value {ore_reg_overworld:[],ore_reg_end:[],ore_reg_nether:[],struct_reg_overworld:[],struct_reg_end:[],struct_reg_nether:[],temp_struct_list:[]}
+data merge storage du:ore_reg {overworld:[],end:[],nether:[]}
+data merge storage du:struct_reg {overworld:{tiny:[],small:[],medium:[],large:[]},end:{tiny:[],small:[],medium:[],large:[]},nether:{tiny:[],small:[],medium:[],large:[]}}
 
 #reset scores
-scoreboard players set $du.reg_id du_data 1
-scoreboard players set worldgen du_data 0
-execute store result score $du.seed du_data run seed
+scoreboard players set $world.reg_id du_data 1
+execute store result score $world.seed du_data run seed

@@ -1,7 +1,7 @@
 
-#in_0: number divide
-#in_1: divisor
-#out_0: remainder
+# $math.in_0: number divide
+# $math.in_1: divisor
+# $math.out_0: remainder
 
-scoreboard players operation out_0 du_data = in_0 du_data
-scoreboard players operation out_0 du_data %= in_1 du_data
+scoreboard players operation $math.out_0 du_data = $math.in_0 du_data
+scoreboard players operation $math.out_0 du_data %= $math.in_1 du_data

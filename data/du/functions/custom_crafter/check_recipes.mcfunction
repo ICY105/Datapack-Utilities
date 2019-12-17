@@ -14,7 +14,7 @@ scoreboard players set out_6 du_data 1
 scoreboard players set out_7 du_data 1
 scoreboard players set out_8 du_data 1
 
-function #du:recipes
+function #du:recipes/crafting
 function du:custom_crafter/inv/get_16
 
 execute if score out du_data matches 1.. run function du:custom_crafter/check_output

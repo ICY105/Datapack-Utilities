@@ -1,0 +1,45 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+	{
+	  "condition": "minecraft:inverted",
+	  "term": {
+		"condition": "minecraft:location_check",
+		"offsetX": 16,
+	    "predicate": {
+		  "light": { "light": { "min": 0, "max": 15 } }
+	    }
+	  }
+	},
+	{
+	  "condition": "minecraft:inverted",
+	  "term": {
+		"condition": "minecraft:location_check",
+		"offsetX": -16,
+	    "predicate": {
+		  "light": { "light": { "min": 0, "max": 15 } }
+	    }
+	  }
+	},
+	{
+	  "condition": "minecraft:inverted",
+	  "term": {
+		"condition": "minecraft:location_check",
+		"offsetZ": 16,
+	    "predicate": {
+		  "light": { "light": { "min": 0, "max": 15 } }
+	    }
+	  }
+	},
+	{
+	  "condition": "minecraft:inverted",
+	  "term": {
+		"condition": "minecraft:location_check",
+		"offsetZ": -16,
+	    "predicate": {
+		  "light": { "light": { "min": 0, "max": 15 } }
+	    }
+	  }
+	}
+  ]
+}

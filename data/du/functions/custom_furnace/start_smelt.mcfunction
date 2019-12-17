@@ -14,6 +14,3 @@ execute if score temp_0 du_data matches 1 if score temp_1 du_data matches 64 run
 
 execute if score temp_0 du_data matches 1 if block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s,Items:[{Slot:1b}]} run function du:custom_furnace/fuel
 execute if score temp_0 du_data matches 1 unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} run tag @s add du_fur_active
-
-execute if block ~ ~ ~ blast_furnace run data merge block ~ ~ ~ {CookTimeTotal:100s}
-execute if block ~ ~ ~ smoker run data merge block ~ ~ ~ {CookTimeTotal:100s}

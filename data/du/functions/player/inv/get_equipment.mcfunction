@@ -1,32 +1,32 @@
 
 data merge block -29999999 0 1601 {Items:[]}
 
-execute store success score temp_0 du_data if data entity @s SelectedItem
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s SelectedItem
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 0b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s SelectedItem
+data modify storage du:temp var.Slot set value 0b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s SelectedItem run replaceitem block -29999999 0 1601 container.0 minecraft:barrier{du_gui:1b}
 
-execute store success score temp_0 du_data if data entity @s Inventory[{Slot:-106b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s Inventory[{Slot:-106b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 1b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s Inventory[{Slot:-106b}]
+data modify storage du:temp var.Slot set value 1b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s Inventory[{Slot:-106b}] run replaceitem block -29999999 0 1601 container.1 minecraft:barrier{du_gui:1b}
 
-execute store success score temp_0 du_data if data entity @s Inventory[{Slot:100b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s Inventory[{Slot:100b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 2b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s Inventory[{Slot:100b}]
+data modify storage du:temp var.Slot set value 2b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s Inventory[{Slot:100b}] run replaceitem block -29999999 0 1601 container.2 minecraft:leather_boots{du_gui:1b}
 
-execute store success score temp_0 du_data if data entity @s Inventory[{Slot:101b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s Inventory[{Slot:101b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 3b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s Inventory[{Slot:101b}]
+data modify storage du:temp var.Slot set value 3b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s Inventory[{Slot:101b}] run replaceitem block -29999999 0 1601 container.3 minecraft:leather_leggings{du_gui:1b}
 
-execute store success score temp_0 du_data if data entity @s Inventory[{Slot:102b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s Inventory[{Slot:102b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 4b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s Inventory[{Slot:102b}]
+data modify storage du:temp var.Slot set value 4b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s Inventory[{Slot:102b}] run replaceitem block -29999999 0 1601 container.4 minecraft:leather_chestplate{du_gui:1b}
 
-execute store success score temp_0 du_data if data entity @s Inventory[{Slot:103b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item set from entity @s Inventory[{Slot:103b}]
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1600 RecordItem.tag.du.temp_item.Slot set value 5b
-execute if score temp_0 du_data matches 1 run data modify block -29999999 0 1601 Items append from block -29999999 0 1600 RecordItem.tag.du.temp_item
+data modify storage du:temp var set from entity @s Inventory[{Slot:103b}]
+data modify storage du:temp var.Slot set value 5b
+data modify block -29999999 0 1601 Items append from storage du:temp var
+execute unless data entity @s Inventory[{Slot:103b}] run replaceitem block -29999999 0 1601 container.5 minecraft:barrier{du_gui:1b}
