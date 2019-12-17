@@ -1,17 +1,13 @@
 
-fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
-kill @s
+execute store result entity @s Pos[0] double 16 run data get entity @s Pos[0] 0.0625
+execute store result entity @s Pos[2] double 16 run data get entity @s Pos[2] 0.0625
 
-execute positioned ~16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
-execute positioned ~16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
+execute at @s run fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
+execute at @s run kill @e[type=area_effect_cloud,distance=..1,tag=cs.chunk]
 
-execute positioned ~-16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
-execute positioned ~-16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
+execute at @s positioned ~16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
+execute at @s positioned ~-16 255 ~ unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
+execute at @s positioned ~ 255 ~16 unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
+execute at @s positioned ~ 255 ~-16 unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
 
-execute positioned ~ 255 ~16 unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
-execute positioned ~ 255 ~16 unless block ~ ~ ~ minecraft:moving_piston run fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
-
-execute positioned ~ 255 ~-16 unless block ~ ~ ~ minecraft:moving_piston run summon minecraft:area_effect_cloud ~ ~ ~ {Tags:[cs.chunk],Duration:2147483647}
-execute positioned ~ 255 ~-16 unless block ~ ~ ~ minecraft:moving_piston run fill ~ 255 ~ ~15 255 ~15 minecraft:moving_piston[facing=down]
-
-function #cs:generate
+execute at @s run function #cs:generate
