@@ -1,2 +1,2 @@
 
-tellraw @a [{"text":"[Loaded Datapack Utils v2.1.0]","color":"dark_green"}]
+tellraw @a [{"text":"[Loaded Datapack Utils v2.1.0b]","color":"dark_green"}]

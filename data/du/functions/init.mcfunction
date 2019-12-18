@@ -15,12 +15,13 @@ scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_village
 scoreboard objectives add du_health dummy
 scoreboard objectives add du_armor armor
 
+#version: (-)XX.XX.XX.XX
+scoreboard objectives add load dummy
+scoreboard players set $du.ver load 2010002
+
 #Team Data
 team add du_nopush
 team modify du_nopush collisionRule never
 
 #ID stuff
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
-
-#version: (-)XX.XX.XX.XX
-scoreboard players set $du.ver load 2010000
