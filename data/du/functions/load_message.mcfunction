@@ -8,6 +8,6 @@ execute if score $install.15 du_data matches 0 run scoreboard players set $insta
 execute if score $install.15 du_data matches 0 run tellraw @a [{"text":"Error: This version of Datapack Utils requires Minecraft +1.15. Click [here] to download the latest version for 1.14 (2.0.2a).","color":"red","clickEvent":{"action":"open_url","value":"https://github.com/ImCoolYeah105/Datapack-Utilities/releases/tag/2.0.2a"}}]
 
 #print install message
-execute if score $install du_data matches 1 run tellraw @a [{"text":"[Loaded Datapack Utils v2.1.0c]","color":"dark_green"}]
+execute if score $install du_data matches 1 run tellraw @a [{"text":"[Loaded Datapack Utils v2.1.0d]","color":"dark_green"}]
 
 
