@@ -13,4 +13,4 @@ execute in minecraft:the_nether run forceload add -29999999 1600
 
 #init modules
 function du:base/init
-function du:world/init
+function du:generation/init

@@ -4,7 +4,7 @@ function du:base/base
 
 #Player
 execute as @a at @s run function du:player/player
-execute if score timer_20 du_data matches 0 as @e[tag=du_click_entity] at @s unless entity @p[distance=..8] run tp @s ~ -300 ~
+execute if score timer_20 du_data matches 0 as @e[tag=du_click_entity] at @s unless entity @p[distance=..8,tag=du_click_active] run tp @s ~ -300 ~
 
 #Items
 execute as @e[type=item,tag=!du_item_checked] at @s run function du:base/items
