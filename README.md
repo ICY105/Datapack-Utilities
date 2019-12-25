@@ -1,5 +1,5 @@
 # Download
-Head over to the [releases](https://github.com/ImCoolYeah105/Datapack-Utilities/releases) page and download the latest version- or if you need a version compatible with an older Minecraft version, scroll back and find it the version labeld "vX: Latest MC vX Version."
+Head over to the [releases](https://github.com/ImCoolYeah105/Datapack-Utilities/releases) page and download the latest version- or if you need a version compatible with an older Minecraft version, scroll back and find it the version labled "vX: Latest MC vX Version."
 
 # Datapack-Utilities
 Datapack Utils aims to handle various complicated tasks and simplify them into something easy to use.
