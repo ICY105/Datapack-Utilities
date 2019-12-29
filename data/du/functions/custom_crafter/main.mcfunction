@@ -33,7 +33,7 @@ execute unless block ~ ~ ~ #du:internal/chest-like{Items:[{Slot:26b,tag:{du_gui:
 
 #check recipes
 execute if entity @s[tag=du_has_recipe] run function du:custom_crafter/inv/get_16
-execute if entity @s[tag=du_has_recipe] if score $crafting.out du_data < @s $crafting.du_data run function du:custom_crafter/process_recipes
+execute if entity @s[tag=du_has_recipe] if score $crafting.out du_data < @s du_data run function du:custom_crafter/process_recipes
 execute if entity @s[tag=!du_has_recipe] if score $base.timer_20 du_data matches 0 store result score $crafting.temp_0 du_data run data get block ~ ~ ~ Items[17].Count
 execute if entity @s[tag=!du_has_recipe] if score $base.timer_20 du_data matches 0 if score $crafting.temp_0 du_data matches 1.. unless block ~ ~ ~ #du:internal/chest-like{Items:[{Slot:16b}]} run function du:custom_crafter/check_recipes
 execute if entity @s[tag=!du_has_recipe] if score $base.timer_20 du_data matches 0 store result score $crafting.temp_0 du_data run data get block ~ ~ ~ Items[16].Count

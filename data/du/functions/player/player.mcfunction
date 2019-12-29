@@ -17,7 +17,7 @@ execute if data entity @s Inventory[].tag.du_dur.enabled run function du:player/
 execute if score @s du_health matches 12.. unless predicate du:entity/is_invul_tick run function du:player/damage
 
 #Assign Player IDs
-execute if score timer_20 $base.du_data matches 0 run function du:player/uuid/get_uuid
+execute if score $base.timer_20 du_data matches 0 run function du:player/uuid/get_uuid
 
 #ui clear
 clear @s gray_stained_glass_pane{du_gui:1b}
