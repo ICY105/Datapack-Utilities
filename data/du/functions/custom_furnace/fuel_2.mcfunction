@@ -87,4 +87,6 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:f
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:ladder"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:sign"}]} run data merge block ~ ~ ~ {BurnTime:200s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:bowl"}]} run data merge block ~ ~ ~ {BurnTime:100s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:scaffolding"}]} run data merge block ~ ~ ~ {BurnTime:300s}
+
 

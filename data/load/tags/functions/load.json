@@ -1,5 +1,6 @@
 {
     "values": [
-		"du:load"
+		"du:load",
+		"chunk_scan:load"
 	]
 }

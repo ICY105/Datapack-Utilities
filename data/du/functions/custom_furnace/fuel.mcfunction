@@ -6,10 +6,8 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:d
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:blaze_rod"}]} run data merge block ~ ~ ~ {BurnTime:2400s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:coal"}]} run data merge block ~ ~ ~ {BurnTime:1600s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:charcoal"}]} run data merge block ~ ~ ~ {BurnTime:1600s}
-execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:red_mushroom_block"}]} run data merge block ~ ~ ~ {BurnTime:300s}
-execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:brown_mushroom_block"}]} run data merge block ~ ~ ~ {BurnTime:300s}
-execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:mushroom_stem"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:stick"}]} run data merge block ~ ~ ~ {BurnTime:100s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:bamboo"}]} run data merge block ~ ~ ~ {BurnTime:50s}
 
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:oak_log"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:birch_log"}]} run data merge block ~ ~ ~ {BurnTime:300s}
