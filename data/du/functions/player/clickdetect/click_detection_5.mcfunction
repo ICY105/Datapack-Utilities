@@ -1,12 +1,7 @@
-scoreboard players operation temp_0 du_data = @s du_uuid
 
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_entity","du_click_1"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_entity","du_click_2"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_entity","du_click_3"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_entity","du_click_4"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
-execute if entity @s[tag=!du_click_active] run summon villager ~ ~ ~ {Tags:["du_click_entity","du_click_5"],NoGravity:1b,NoAI:1,Silent:1,Team:"du_nopush",VillagerData:{profession:"minecraft:nothing",type:"minecraft:plains"},ActiveEffects:[{Id:14,Amplifier:0,Duration:2000000,ShowParticles:0b},{Id:11,Amplifier:3,Duration:2000000,ShowParticles:0b},{Id:6,Amplifier:127,Duration:2000000,ShowParticles:0b}],Attributes:[{Name:generic.maxHealth,Base:1000000}],Health:1000000.0f}
-execute if entity @s[tag=!du_click_active] as @e[type=villager,tag=du_click_entity] unless score @s du_data matches ..2147483647 run scoreboard players operation @s du_data = temp_0 du_data
-
+scoreboard players operation $player.in_0 du_data = @s du_uuid
+scoreboard players set $player.in_1 du_data 5
+execute if entity @s[tag=!du_click_active] run function du:player/clickdetect/summon_villagers
 tag @s add du_click_active
 
 execute if entity @s[tag=!du_moving] as @e[tag=du_click_entity,type=villager] if score @s du_data = temp_0 du_data run tp @s ~ ~1 ~

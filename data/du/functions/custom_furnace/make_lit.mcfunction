@@ -1,4 +1,6 @@
-data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
+
+data merge storage du:temp {list:[]}
+data modify storage du:temp list set from block ~ ~ ~ Items
 
 execute if block ~ ~ ~ furnace[facing=north] run setblock ~ ~ ~ furnace[facing=north,lit=true]
 execute if block ~ ~ ~ furnace[facing=south] run setblock ~ ~ ~ furnace[facing=south,lit=true]
@@ -15,4 +17,4 @@ execute if block ~ ~ ~ smoker[facing=south] run setblock ~ ~ ~ smoker[facing=sou
 execute if block ~ ~ ~ smoker[facing=east] run setblock ~ ~ ~ smoker[facing=east,lit=true]
 execute if block ~ ~ ~ smoker[facing=west] run setblock ~ ~ ~ smoker[facing=west,lit=true]
 
-data modify block ~ ~ ~ Items set from block -29999999 0 1601 Items
+data modify block ~ ~ ~ Items set from storage du:temp list

@@ -1,44 +1,44 @@
-scoreboard players operation temp_4 du_data = out du_data
+scoreboard players operation $crafting.temp_4 du_data = $crafting.out du_data
 
 function du:custom_crafter/check_recipes
 tag @s remove du_has_recipe
-scoreboard players operation in du_data = temp_4 du_data
+scoreboard players operation $crafting.in du_data = $crafting.temp_4 du_data
 function du:custom_crafter/inv/set_16
 
 function du:custom_crafter/inv/get_crafting_count
 
-scoreboard players operation out_0 du_data *= temp_3 du_data
-scoreboard players operation out_1 du_data *= temp_3 du_data
-scoreboard players operation out_2 du_data *= temp_3 du_data
-scoreboard players operation out_3 du_data *= temp_3 du_data
-scoreboard players operation out_4 du_data *= temp_3 du_data
-scoreboard players operation out_5 du_data *= temp_3 du_data
-scoreboard players operation out_6 du_data *= temp_3 du_data
-scoreboard players operation out_7 du_data *= temp_3 du_data
-scoreboard players operation out_8 du_data *= temp_3 du_data
+scoreboard players operation $crafting.out_0 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_1 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_2 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_3 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_4 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_5 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_6 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_7 du_data *= $crafting.temp_3 du_data
+scoreboard players operation $crafting.out_8 du_data *= $crafting.temp_3 du_data
 
-scoreboard players set temp_2 du_data 0
-execute if score in_0 du_data matches 1.. run scoreboard players add temp_2 du_data 1
-execute if score in_1 du_data matches 1.. run scoreboard players add temp_2 du_data 1
-execute if score in_2 du_data matches 1.. run scoreboard players add temp_2 du_data 1
+scoreboard players set $crafting.temp_2 du_data 0
+execute if score $crafting.in_0 du_data matches 1.. run scoreboard players add $crafting.temp_2 du_data 1
+execute if score $crafting.in_1 du_data matches 1.. run scoreboard players add $crafting.temp_2 du_data 1
+execute if score $crafting.in_2 du_data matches 1.. run scoreboard players add $crafting.temp_2 du_data 1
 
-scoreboard players set temp_3 du_data 0
-execute if score in_0 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score in_1 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score in_2 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score in_3 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score in_4 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score in_5 du_data matches 1.. run scoreboard players add temp_3 du_data 1
-execute if score temp_4 du_data matches 1.. run scoreboard players add temp_3 du_data 1
+scoreboard players set $crafting.temp_3 du_data 0
+execute if score $crafting.in_0 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.in_1 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.in_2 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.in_3 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.in_4 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.in_5 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
+execute if score $crafting.temp_4 du_data matches 1.. run scoreboard players add $crafting.temp_3 du_data 1
 
-scoreboard players operation in_0 du_data -= out_0 du_data
-scoreboard players operation in_1 du_data -= out_1 du_data
-scoreboard players operation in_2 du_data -= out_2 du_data
-scoreboard players operation in_3 du_data -= out_3 du_data
-scoreboard players operation in_4 du_data -= out_4 du_data
-scoreboard players operation in_5 du_data -= out_5 du_data
-scoreboard players operation in_6 du_data -= out_6 du_data
-scoreboard players operation in_7 du_data -= out_7 du_data
-scoreboard players operation in_8 du_data -= out_8 du_data
+scoreboard players operation $crafting.in_0 du_data -= $crafting.out_0 du_data
+scoreboard players operation $crafting.in_1 du_data -= $crafting.out_1 du_data
+scoreboard players operation $crafting.in_2 du_data -= $crafting.out_2 du_data
+scoreboard players operation $crafting.in_3 du_data -= $crafting.out_3 du_data
+scoreboard players operation $crafting.in_4 du_data -= $crafting.out_4 du_data
+scoreboard players operation $crafting.in_5 du_data -= $crafting.out_5 du_data
+scoreboard players operation $crafting.in_6 du_data -= $crafting.out_6 du_data
+scoreboard players operation $crafting.in_7 du_data -= $crafting.out_7 du_data
+scoreboard players operation $crafting.in_8 du_data -= $crafting.out_8 du_data
 
 function du:custom_crafter/inv/set_crafting_count

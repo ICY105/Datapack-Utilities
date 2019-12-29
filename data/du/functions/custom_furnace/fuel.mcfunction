@@ -27,7 +27,7 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:d
 
 execute if block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} run function du:custom_furnace/fuel_2
 
-execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} store result score temp_1 du_data run data get block ~ ~ ~ Items[{Slot:1b}].Count
-execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} run scoreboard players remove temp_1 du_data 1
-execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} store result block ~ ~ ~ Items[{Slot:1b}].Count byte 1 run scoreboard players get temp_1 du_data
+execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} store result score $crafting.temp_1 du_data run data get block ~ ~ ~ Items[{Slot:1b}].Count
+execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} run scoreboard players remove $crafting.temp_1 du_data 1
+execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} store result block ~ ~ ~ Items[{Slot:1b}].Count byte 1 run scoreboard players get $crafting.temp_1 du_data
 execute unless block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} if block ~ ~ ~ #du:internal/furnace-like[lit=false] run function du:custom_furnace/make_lit
