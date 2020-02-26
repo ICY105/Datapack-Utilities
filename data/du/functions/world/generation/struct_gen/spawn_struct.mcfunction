@@ -43,9 +43,9 @@ function du:world/generation/struct_gen/get_weighted_struct
 execute store result score $world.in_0 du_data run data get storage du:temp list[0].id
 
 #gen struct
-execute if score $world.in_0 du_data matches 1.. if score $world.dim du_data matches -1 run function #du:struct_gen/nether
+execute if score $world.in_0 du_data matches 1.. if score $world.dim du_data matches -1 run function #du:struct_gen/the_nether
 execute if score $world.in_0 du_data matches 1.. if score $world.dim du_data matches 0 run function #du:struct_gen/overworld
-execute if score $world.in_0 du_data matches 1.. if score $world.dim du_data matches 1 run function #du:struct_gen/end
+execute if score $world.in_0 du_data matches 1.. if score $world.dim du_data matches 1 run function #du:struct_gen/the_end
 
 #end find surface loop
 scoreboard players set $world.temp_0 du_data -1
