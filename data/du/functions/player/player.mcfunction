@@ -20,7 +20,7 @@ execute if score @s du_health matches 12.. unless predicate du:entity/is_invul_t
 execute if score $base.timer_20 du_data matches 0 run function du:player/uuid/get_uuid
 
 #ui clear
-clear @s gray_stained_glass_pane{du_gui:1b}
+execute if entity @s[nbt={Inventory:[{tag:{du_gui:1b}}]}] run clear @s #du:ui-items{du_gui:1b}
 
 #reset scores
 scoreboard players set @s du_talked 0

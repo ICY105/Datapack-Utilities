@@ -1,7 +1,7 @@
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:lava_bucket"}]} run data merge block ~ ~ ~ {BurnTime:20000s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:lava_bucket"}]} run replaceitem block ~ ~ ~ container.1 bucket 2
 
-execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:block_of_coal"}]} run data merge block ~ ~ ~ {BurnTime:16000s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:coal_block"}]} run data merge block ~ ~ ~ {BurnTime:16000s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:dried_kelp_block"}]} run data merge block ~ ~ ~ {BurnTime:4000s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:blaze_rod"}]} run data merge block ~ ~ ~ {BurnTime:2400s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:coal"}]} run data merge block ~ ~ ~ {BurnTime:1600s}
