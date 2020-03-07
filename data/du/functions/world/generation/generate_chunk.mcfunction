@@ -13,6 +13,9 @@ scoreboard players set $world.dim du_data 0
 execute if predicate du:world/nether run scoreboard players set $world.dim du_data -1
 execute if predicate du:world/end run scoreboard players set $world.dim du_data 1
 
+#reset LCG
+scoreboard players set $world.rng_seed du_data -2147483648
+
 #get biome id
 loot replace block -29999999 0 1601 container.0 loot du:biomes
 execute store result score $world.biome du_data run data get block -29999999 0 1601 Items[0].tag.biome_id

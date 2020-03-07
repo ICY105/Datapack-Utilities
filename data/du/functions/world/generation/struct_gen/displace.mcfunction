@@ -12,12 +12,12 @@
 
 # x
 scoreboard players set $math.in_0 du_data 9
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $world.temp_0 du_data = $math.out_0 du_data
 
 # z
 scoreboard players set $math.in_0 du_data 9
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $world.temp_1 du_data = $math.out_0 du_data
 
 #run displace

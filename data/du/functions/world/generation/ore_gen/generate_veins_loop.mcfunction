@@ -24,19 +24,19 @@
 
 # X value
 scoreboard players set $math.in_0 du_data 14
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $world.temp_0 du_data = $math.out_0 du_data
 
 # Z value
 scoreboard players set $math.in_0 du_data 14
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $world.temp_1 du_data = $math.out_0 du_data
 
 # Y value
 scoreboard players operation $math.in_0 du_data = $world.in_2 du_data
 scoreboard players operation $math.in_0 du_data -= $world.in_1 du_data
 scoreboard players add $math.in_0 du_data 1
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $math.out_0 du_data += $world.in_1 du_data
 scoreboard players operation $world.temp_2 du_data = $math.out_0 du_data
 
@@ -44,7 +44,7 @@ scoreboard players operation $world.temp_2 du_data = $math.out_0 du_data
 scoreboard players operation $math.in_0 du_data = $world.in_6 du_data
 scoreboard players operation $math.in_0 du_data -= $world.in_5 du_data
 scoreboard players add $math.in_0 du_data 1
-function du:math/random
+function du:world/random_seeded
 scoreboard players operation $math.out_0 du_data += $world.in_5 du_data
 scoreboard players operation $world.in_8 du_data = $math.out_0 du_data
 

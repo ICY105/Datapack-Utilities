@@ -6,3 +6,5 @@ data merge storage du:struct_reg {overworld:{tiny:[],small:[],medium:[],large:[]
 #reset scores
 scoreboard players set $world.reg_id du_data 1
 execute store result score $world.seed du_data run seed
+
+function structs:start

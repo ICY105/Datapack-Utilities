@@ -1,0 +1,83 @@
+{
+  "condition": "minecraft:alternative",
+  "terms": [
+    {
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "desert_pyramid"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "endcity"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "fortress"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "igloo"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "jungle_pyramid"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "mansion"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "monument"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "ocean_ruin"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "pillager_outpost"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "shipwreck"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "stronghold"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "swamp_hut"
+	  }
+	},
+	{
+	  "condition": "minecraft:location_check",
+	  "predicate": {
+		"feature": "village"
+	  }
+	}
+  ]
+}

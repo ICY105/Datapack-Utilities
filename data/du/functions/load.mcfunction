@@ -35,6 +35,7 @@ execute in minecraft:the_nether run forceload add -29999999 1600
 
 #init modules
 function du:base/init
+function du:math/init
 function du:world/init
 
 #schedule load message

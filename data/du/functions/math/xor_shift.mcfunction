@@ -4,13 +4,12 @@
 #> $math.out_0: shifted number
 
 #> $math.temp_0: quick maths
-#* $math.temp_0..5: xor_bitwise
-#> $math.temp_6: in_0 holder
-#> $math.temp_7: in_1 holder
+#> $math.temp_3: in_0 holder
+#> $math.temp_4: in_1 holder
 
 #assign placeholder
-scoreboard players operation $math.temp_6 du_data = $math.in_0 du_data
-scoreboard players operation $math.temp_7 du_data = $math.in_1 du_data
+scoreboard players operation $math.temp_3 du_data = $math.in_0 du_data
+scoreboard players operation $math.temp_4 du_data = $math.in_1 du_data
 
 # $math.in_0 << 13
 scoreboard players set $math.temp_0 du_data 8192
@@ -35,5 +34,5 @@ function du:math/xor_bitwise
 #return $math.out_0
 
 #reset $math.in_0 & $math.in_1
-scoreboard players operation $math.in_0 du_data = $math.temp_6 du_data
-scoreboard players operation $math.in_1 du_data = $math.temp_7 du_data
+scoreboard players operation $math.in_0 du_data = $math.temp_3 du_data
+scoreboard players operation $math.in_1 du_data = $math.temp_4 du_data
