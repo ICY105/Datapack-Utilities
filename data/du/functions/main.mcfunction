@@ -18,3 +18,6 @@ execute if score $base.timer_20 du_data matches 3 as @e[tag=du_campfire] at @s r
 
 #Custom Crafter
 execute as @e[tag=du_crafter] at @s if entity @p[distance=..8] run function du:custom_crafter/main
+
+#Pre-generator
+execute if score $base.timer_100 du_data matches 0 if data storage du:temp pregen run function du:world/pregen/tick

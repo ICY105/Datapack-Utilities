@@ -10,6 +10,7 @@ scoreboard objectives add du_move_z dummy
 
 scoreboard objectives add du_jump minecraft.custom:minecraft.jump
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
+scoreboard objectives add pregen_radius trigger
 
 scoreboard objectives add du_health dummy
 scoreboard objectives add du_armor armor
