@@ -10,9 +10,10 @@ execute store result storage du:temp pregen.x int 1 run data get entity @s Pos[0
 execute store result storage du:temp pregen.z int 1 run data get entity @s Pos[2]
 
 #configure player
-scoreboard players reset @s pregen_radius
+gamemode spectator @s
 tag @s add du_pregen
 tag @s remove chunk_scan.disabled
+scoreboard players reset @s pregen_radius
 tellraw @p [{"text":"Pre-generation has begun.\n","color":"dark_green"},{"text":"Do not move until the task is complete.","color":"gold"}]
 
 #teleport to first location
