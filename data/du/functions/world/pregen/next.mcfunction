@@ -20,11 +20,18 @@ execute store result storage du:temp pregen.step_z int 1 run scoreboard players 
 scoreboard players operation $world.temp_2 du_data = $world.in_1 du_data
 scoreboard players operation $world.temp_2 du_data *= $world.in_1 du_data
 scoreboard players operation $world.temp_2 du_data /= $cons.256 du_data
+scoreboard players operation $world.temp_3 du_data = $world.in_1 du_data
+scoreboard players operation $world.temp_3 du_data /= $cons.16 du_data
+scoreboard players operation $world.temp_2 du_data += $world.temp_3 du_data
 
-scoreboard players operation $world.temp_3 du_data = $world.temp_1 du_data
-scoreboard players operation $world.temp_3 du_data *= $cons.32 du_data
-scoreboard players operation $world.temp_3 du_data += $world.temp_0 du_data
-scoreboard players operation $world.temp_3 du_data /= $cons.4 du_data
+scoreboard players operation $world.temp_3 du_data = $world.temp_0 du_data
+scoreboard players operation $world.temp_3 du_data /= $cons.16 du_data
+scoreboard players operation $world.temp_3 du_data *= $cons.4 du_data
+
+scoreboard players operation $world.temp_4 du_data = $world.temp_1 du_data
+scoreboard players operation $world.temp_4 du_data *= $world.in_1 du_data
+scoreboard players operation $world.temp_4 du_data /= $cons.256 du_data
+scoreboard players operation $world.temp_3 du_data += $world.temp_4 du_data
 
 tellraw @a[tag=du_pregen] [{"text":"Completion: ","color":"dark_green"},{"score":{"name":"$world.temp_3","objective":"du_data"}},{"text":"/"},{"score":{"name":"$world.temp_2","objective":"du_data"}}]
 

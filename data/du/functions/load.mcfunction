@@ -16,7 +16,7 @@ scoreboard objectives add du_health dummy
 scoreboard objectives add du_armor armor
 
 #version: ( - for prerelease) XX.XX.XX.XX
-scoreboard players set $du.ver load 2010300
+scoreboard players set $du.ver load 2010400
 
 #Team Data
 team add du_nopush
