@@ -6,10 +6,15 @@
 		"minecraft:stripped_jungle_log",
 		"minecraft:stripped_acacia_log",
 		"minecraft:stripped_dark_oak_log",
+		"minecraft:stripped_crimson_stem",
+		"minecraft:stripped_warped_stem",
+		
 		"minecraft:stripped_spruce_wood",
 		"minecraft:stripped_birch_wood",
 		"minecraft:stripped_jungle_wood",
 		"minecraft:stripped_acacia_wood",
-		"minecraft:stripped_dark_oak_wood"
+		"minecraft:stripped_dark_oak_wood",
+		"minecraft:stripped_crimson_hyphae",
+		"minecraft:stripped_warped_hyphae"
 	]
 }

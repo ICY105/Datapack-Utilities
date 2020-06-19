@@ -2,11 +2,14 @@
 	"display": {
 		"title": "Datapack Utils",
 		"description": "Running Datapack Utils by ImCoolYeah105",
-		"icon": {"item": "minecraft:crafting_table"},
+		"icon": {
+			"item": "minecraft:player_head",
+            "nbt": "{SkullOwner:\"ImCoolYeah105\"}"
+		},
 		"show_toast": false,
 		"announce_to_chat": false,
 		"frame": "goal",
-		"background":"minecraft:textures/block/obsidian.png"
+		"background":"minecraft:textures/block/blue_ice.png"
     },
 	"criteria": {
         "always": {

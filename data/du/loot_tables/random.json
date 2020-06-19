@@ -11,9 +11,9 @@
 			{
 			  "function": "minecraft:set_attributes",
 			  "modifiers": [
-			    {
-				  "name":"generic.speed",
-				  "attribute":"generic.speed",
+				{
+				  "name":"generic.max_health",
+				  "attribute":"generic.max_health",
 				  "operation":"addition",
 				  "slot":"head",
 				  "amount":{

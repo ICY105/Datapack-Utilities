@@ -156,7 +156,7 @@
                 {
                   "condition": "minecraft:location_check",
                   "predicate": {
-                    "biome": "minecraft:nether"
+                    "biome": "minecraft:nether_wastes"
                   }
                 }
               ],
@@ -1354,6 +1354,78 @@
                 {
                   "function": "minecraft:set_nbt",
                   "tag": "{biome_id:169}"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:soul_sand_valley"
+                  }
+                }
+              ],
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:170}"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:crimson_forest"
+                  }
+                }
+              ],
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:171}"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:warped_forest"
+                  }
+                }
+              ],
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:172}"
+                }
+              ]
+            },
+            {
+              "conditions": [
+                {
+                  "condition": "minecraft:location_check",
+                  "predicate": {
+                    "biome": "minecraft:basalt_deltas"
+                  }
+                }
+              ],
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:173}"
                 }
               ]
             }

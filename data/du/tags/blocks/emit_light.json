@@ -3,7 +3,6 @@
 		"minecraft:beacon",
 		"minecraft:end_gateway",
 		"minecraft:end_portal",
-		"minecraft:fire",
 		"minecraft:glowstone",
 		"minecraft:jack_o_lantern",
 		"minecraft:lava",
@@ -12,7 +11,6 @@
 		"minecraft:sea_pickle",
 		"minecraft:conduit",
 		"minecraft:end_rod",
-		"minecraft:torch",
 		"minecraft:furnace",
 		"minecraft:nether_portal",
 		"minecraft:redstone_ore",
@@ -22,6 +20,16 @@
 		"minecraft:brewing_stand",
 		"minecraft:brown_mushroom",
 		"minecraft:dragon_egg",
-		"minecraft:end_portal_frame"
+		"minecraft:end_portal_frame",
+		"minecraft:shroomlight",
+		
+		"minecraft:fire",
+		"minecraft:torch",
+		"minecraft:lantern",
+		"minecraft:campfire",
+		"minecraft:soul_fire",
+		"minecraft:soul_torch",
+		"minecraft:soul_lantern",
+		"minecraft:soul_campfire"
 	]
 } 

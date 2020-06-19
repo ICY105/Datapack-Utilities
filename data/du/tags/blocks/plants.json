@@ -16,6 +16,13 @@
 		"minecraft:large_fern",
 		"minecraft:bamboo",
 		"minecraft:chorus_flower",
-		"minecraft:chorus_plant"
+		"minecraft:chorus_plant",
+		"minecraft:crimson_fungus",
+		"minecraft:warped_fungus",
+		"minecraft:crimson_roots",
+		"minecraft:warped_roots",
+		"minecraft:nether_sprouts",
+		"minecraft:weeping_vines",
+		"minecraft:twisting_vines"
 	]
 }

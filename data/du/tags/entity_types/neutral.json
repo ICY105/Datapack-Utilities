@@ -7,8 +7,9 @@
 		"minecraft:enderman",
 		"minecraft:iron_golem",
 		"minecraft:spider",
-		"minecraft:zombie_pigman",
 		"minecraft:llama",
-		"minecraft:pufferfish"
+		"minecraft:pufferfish",
+		"minecraft:piglin",
+		"minecraft:zombified_piglin"
 	]
 } 
