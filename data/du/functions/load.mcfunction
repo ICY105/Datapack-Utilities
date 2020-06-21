@@ -25,15 +25,6 @@ team modify du_nopush collisionRule never
 #ID stuff
 execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players set incr_id du_uuid 0
 
-#marks spawn chunks
-kill @e[type=area_effect_cloud,tag=du_spawn_chunks]
-summon area_effect_cloud ~ 0 ~ {Tags:["du_spawn_chunks"],Duration:2000000000}
-
-#Init Modules
-forceload add -29999999 1600
-execute in minecraft:the_end run forceload add -29999999 1600
-execute in minecraft:the_nether run forceload add -29999999 1600
-
 #init modules
 function du:base/init
 function du:math/init

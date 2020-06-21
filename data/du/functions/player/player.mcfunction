@@ -1,4 +1,7 @@
 
+#forceloaded chunk
+execute if score $base.timer_20 du_data matches 0 unless entity @e[tag=du_forced_chunk,distance=0..] run function du:base/init_chunk
+
 #actions
 tag @s remove du_jumping
 tag @s[scores={du_jump=1..}] add du_jumping
