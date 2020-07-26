@@ -1,3 +1,4 @@
+
 scoreboard players operation $crafting.temp_4 du_data = $crafting.out du_data
 
 function du:custom_crafter/check_recipes

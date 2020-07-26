@@ -20,6 +20,7 @@
 		"#minecraft:doors",
 		"#minecraft:carpets",
 		"#minecraft:fences",
+		"#minecraft:campfires",
 		
 		"minecraft:chorus_plant",
 		"minecraft:chorus_flower",
@@ -44,6 +45,7 @@
 		"minecraft:redstone_wire",
 		"minecraft:bell",
 		"minecraft:lantern",
+		"minecraft:soul_lantern",
 		"minecraft:grindstone",
 		"minecraft:stonecutter",
 		"minecraft:cobweb",

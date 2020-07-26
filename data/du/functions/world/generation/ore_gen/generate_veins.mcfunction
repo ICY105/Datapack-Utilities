@@ -19,7 +19,7 @@
 scoreboard players operation $math.in_0 du_data = $world.in_4 du_data
 scoreboard players operation $math.in_0 du_data -= $world.in_3 du_data
 scoreboard players add $math.in_0 du_data 1
-function du:world/random_seeded
+function du:world/utils/random_seeded
 scoreboard players operation $math.out_0 du_data += $world.in_3 du_data
 scoreboard players operation $world.in_7 du_data = $math.out_0 du_data
 

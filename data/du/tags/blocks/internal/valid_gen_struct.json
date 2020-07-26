@@ -22,6 +22,12 @@
 		"minecraft:netherrack",
 		"minecraft:soul_sand",
 		"minecraft:nether_quartz_ore",
-		"minecraft:magma_block"
+		"minecraft:nether_gold_ore",
+		"minecraft:magma_block",
+		"minecraft:crimson_nylium",
+		"minecraft:warped_nylium",
+		"minecraft:soul_soil",
+		"minecraft:blackstone",
+		"minecraft:basalt"
 	]
 }

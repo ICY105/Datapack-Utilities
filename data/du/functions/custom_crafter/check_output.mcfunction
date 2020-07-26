@@ -1,3 +1,4 @@
+
 execute if score $crafting.in_0 du_data matches 1.. unless score $crafting.out_0 du_data matches 0 run scoreboard players operation $crafting.in_0 du_data /= $crafting.out_0 du_data
 execute if score $crafting.in_1 du_data matches 1.. unless score $crafting.out_1 du_data matches 0 run scoreboard players operation $crafting.in_1 du_data /= $crafting.out_1 du_data
 execute if score $crafting.in_2 du_data matches 1.. unless score $crafting.out_2 du_data matches 0 run scoreboard players operation $crafting.in_2 du_data /= $crafting.out_2 du_data
@@ -40,5 +41,4 @@ scoreboard players operation $crafting.temp_3 du_data = $crafting.temp_0 du_data
 scoreboard players operation $crafting.temp_3 du_data /= $crafting.out du_data
 
 scoreboard players operation @s du_data = $crafting.temp_0 du_data
-scoreboard players operation $crafting.in du_data = $crafting.temp_0 du_data
-function du:custom_crafter/inv/set_16
+execute store result block ~ ~ ~ Items[{Slot:16b}].Count byte 1 run scoreboard players get $crafting.temp_0 du_data

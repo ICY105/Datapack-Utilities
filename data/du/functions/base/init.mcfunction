@@ -6,4 +6,4 @@ scoreboard players set $base.timer_20 du_data 0
 scoreboard players set $base.timer_100 du_data 0
 
 #reset storage
-data merge storage du:temp {list:[],object:{},var:0}
+data merge storage du:temp {list:[],object:{},var:0,input:0,output:0}

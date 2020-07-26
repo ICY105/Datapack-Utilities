@@ -12,7 +12,16 @@
 		"minecraft:pumpkin",
 		"minecraft:melon",
 		"minecraft:fire",
+		"minecraft:soul_fire",
 		"minecraft:chorus_plant",
-		"minecraft:chorus_flower"
+		"minecraft:chorus_flower",
+		"minecraft:nether_wart_block",
+		"minecraft:warped_wart_block",
+		"minecraft:shroomlight",
+		"minecraft:glowstone",
+		"minecraft:bone_block",
+		"minecraft:nether_bricks",
+		"minecraft:nether_brick_fence",
+		"minecraft:nether_brick_stairs"
 	]
 }

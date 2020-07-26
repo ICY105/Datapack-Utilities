@@ -10,7 +10,7 @@
             {
 				"conditions": [
                 {
-					"condition": "minecraft:location_check",
+			      "condition": "minecraft:location_check",
                   "predicate": {
                     "biome": "minecraft:ocean"
                   }
@@ -21,7 +21,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:0}"
+                  "tag": "{biome_id:\"minecraft:ocean\"}"
                 }
               ]
             },
@@ -39,7 +39,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:1}"
+                  "tag": "{biome_id:\"minecraft:plains\"}"
                 }
               ]
             },
@@ -57,7 +57,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:2}"
+                  "tag": "{biome_id:\"minecraft:desert\"}"
                 }
               ]
             },
@@ -75,7 +75,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:3}"
+                  "tag": "{biome_id:\"minecraft:mountains\"}"
                 }
               ]
             },
@@ -93,7 +93,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:4}"
+                  "tag": "{biome_id:\"minecraft:forest\"}"
                 }
               ]
             },
@@ -111,7 +111,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:5}"
+                  "tag": "{biome_id:\"minecraft:taiga\"}"
                 }
               ]
             },
@@ -129,7 +129,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:6}"
+                  "tag": "{biome_id:\"minecraft:swamp\"}"
                 }
               ]
             },
@@ -147,7 +147,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:7}"
+                  "tag": "{biome_id:\"minecraft:river\"}"
                 }
               ]
             },
@@ -165,7 +165,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:8}"
+                  "tag": "{biome_id:\"minecraft:nether_wastes\"}"
                 }
               ]
             },
@@ -183,7 +183,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:9}"
+                  "tag": "{biome_id:\"minecraft:the_end\"}"
                 }
               ]
             },
@@ -201,7 +201,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:10}"
+                  "tag": "{biome_id:\"minecraft:frozen_ocean\"}"
                 }
               ]
             },
@@ -219,7 +219,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:11}"
+                  "tag": "{biome_id:\"minecraft:frozen_river\"}"
                 }
               ]
             },
@@ -237,7 +237,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:12}"
+                  "tag": "{biome_id:\"minecraft:snowy_tundra\"}"
                 }
               ]
             },
@@ -255,7 +255,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:13}"
+                  "tag": "{biome_id:\"minecraft:snowy_mountains\"}"
                 }
               ]
             },
@@ -273,7 +273,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:14}"
+                  "tag": "{biome_id:\"minecraft:mushroom_fields\"}"
                 }
               ]
             },
@@ -291,7 +291,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:15}"
+                  "tag": "{biome_id:\"minecraft:mushroom_field_shore\"}"
                 }
               ]
             },
@@ -309,7 +309,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:16}"
+                  "tag": "{biome_id:\"minecraft:beach\"}"
                 }
               ]
             },
@@ -327,7 +327,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:17}"
+                  "tag": "{biome_id:\"minecraft:desert_hills\"}"
                 }
               ]
             },
@@ -345,7 +345,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:18}"
+                  "tag": "{biome_id:\"minecraft:wooded_hills\"}"
                 }
               ]
             },
@@ -363,7 +363,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:19}"
+                  "tag": "{biome_id:\"minecraft:taiga_hills\"}"
                 }
               ]
             },
@@ -381,7 +381,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:20}"
+                  "tag": "{biome_id:\"minecraft:mountain_edge\"}"
                 }
               ]
             },
@@ -399,7 +399,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:21}"
+                  "tag": "{biome_id:\"minecraft:jungle\"}"
                 }
               ]
             },
@@ -417,7 +417,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:22}"
+                  "tag": "{biome_id:\"minecraft:jungle_hills\"}"
                 }
               ]
             },
@@ -435,7 +435,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:23}"
+                  "tag": "{biome_id:jungle_edge}"
                 }
               ]
             },
@@ -453,7 +453,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:24}"
+                  "tag": "{biome_id:\"minecraft:deep_ocean\"}"
                 }
               ]
             },
@@ -471,7 +471,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:25}"
+                  "tag": "{biome_id:\"minecraft:stone_shore\"}"
                 }
               ]
             },
@@ -489,7 +489,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:26}"
+                  "tag": "{biome_id:\"minecraft:snowy_beach\"}"
                 }
               ]
             },
@@ -507,7 +507,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:27}"
+                  "tag": "{biome_id:\"minecraft:birch_forest\"}"
                 }
               ]
             },
@@ -525,7 +525,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:28}"
+                  "tag": "{biome_id:\"minecraft:birch_forest_hills\"}"
                 }
               ]
             },
@@ -543,7 +543,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:29}"
+                  "tag": "{biome_id:\"minecraft:dark_forest\"}"
                 }
               ]
             },
@@ -561,7 +561,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:30}"
+                  "tag": "{biome_id:\"minecraft:snowy_taiga\"}"
                 }
               ]
             },
@@ -579,7 +579,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:31}"
+                  "tag": "{biome_id:\"minecraft:snowy_taiga_hills\"}"
                 }
               ]
             },
@@ -597,7 +597,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:32}"
+                  "tag": "{biome_id:\"minecraft:giant_tree_taiga\"}"
                 }
               ]
             },
@@ -615,7 +615,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:33}"
+                  "tag": "{biome_id:\"minecraft:giant_tree_taiga_hills\"}"
                 }
               ]
             },
@@ -633,7 +633,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:34}"
+                  "tag": "{biome_id:\"minecraft:wooded_mountains\"}"
                 }
               ]
             },
@@ -651,7 +651,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:35}"
+                  "tag": "{biome_id:\"minecraft:savanna\"}"
                 }
               ]
             },
@@ -669,7 +669,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:36}"
+                  "tag": "{biome_id:\"minecraft:savanna_plateau\"}"
                 }
               ]
             },
@@ -687,7 +687,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:37}"
+                  "tag": "{biome_id:\"minecraft:badlands\"}"
                 }
               ]
             },
@@ -705,7 +705,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:38}"
+                  "tag": "{biome_id:\"minecraft:wooded_badlands_plateau\"}"
                 }
               ]
             },
@@ -723,7 +723,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:39}"
+                  "tag": "{biome_id:\"minecraft:badlands_plateau\"}"
                 }
               ]
             },
@@ -741,7 +741,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:40}"
+                  "tag": "{biome_id:\"minecraft:small_end_islands\"}"
                 }
               ]
             },
@@ -759,7 +759,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:41}"
+                  "tag": "{biome_id:\"minecraft:end_midlands\"}"
                 }
               ]
             },
@@ -777,7 +777,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:42}"
+                  "tag": "{biome_id:\"minecraft:end_highlands\"}"
                 }
               ]
             },
@@ -795,7 +795,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:43}"
+                  "tag": "{biome_id:\"minecraft:end_barrens\"}"
                 }
               ]
             },
@@ -813,7 +813,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:44}"
+                  "tag": "{biome_id:\"minecraft:warm_ocean\"}"
                 }
               ]
             },
@@ -831,7 +831,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:45}"
+                  "tag": "{biome_id:\"minecraft:lukewarm_ocean\"}"
                 }
               ]
             },
@@ -849,7 +849,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:46}"
+                  "tag": "{biome_id:\"minecraft:cold_ocean\"}"
                 }
               ]
             },
@@ -867,7 +867,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:47}"
+                  "tag": "{biome_id:\"minecraft:deep_warm_ocean\"}"
                 }
               ]
             },
@@ -885,7 +885,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:48}"
+                  "tag": "{biome_id:\"minecraft:deep_lukewarm_ocean\"}"
                 }
               ]
             },
@@ -903,7 +903,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:49}"
+                  "tag": "{biome_id:\"minecraft:deep_cold_ocean\"}"
                 }
               ]
             },
@@ -921,7 +921,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:50}"
+                  "tag": "{biome_id:\"minecraft:deep_frozen_ocean\"}"
                 }
               ]
             },
@@ -939,7 +939,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:127}"
+                  "tag": "{biome_id:\"minecraft:the_void\"}"
                 }
               ]
             },
@@ -957,7 +957,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:129}"
+                  "tag": "{biome_id:\"minecraft:sunflower_plains\"}"
                 }
               ]
             },
@@ -975,7 +975,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:130}"
+                  "tag": "{biome_id:\"minecraft:desert_lakes\"}"
                 }
               ]
             },
@@ -993,7 +993,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:131}"
+                  "tag": "{biome_id:\"minecraft:gravelly_mountains\"}"
                 }
               ]
             },
@@ -1011,7 +1011,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:132}"
+                  "tag": "{biome_id:\"minecraft:flower_forest\"}"
                 }
               ]
             },
@@ -1029,7 +1029,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:133}"
+                  "tag": "{biome_id:\"minecraft:taiga_mountains\"}"
                 }
               ]
             },
@@ -1047,7 +1047,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:134}"
+                  "tag": "{biome_id:\"minecraft:swamp_hills\"}"
                 }
               ]
             },
@@ -1065,7 +1065,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:140}"
+                  "tag": "{biome_id:\"minecraft:ice_spikes\"}"
                 }
               ]
             },
@@ -1083,7 +1083,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:149}"
+                  "tag": "{biome_id:\"minecraft:modidied_jungle\"}"
                 }
               ]
             },
@@ -1101,7 +1101,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:151}"
+                  "tag": "{biome_id:\"minecraft:modified_jungle_edge\"}"
                 }
               ]
             },
@@ -1119,7 +1119,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:155}"
+                  "tag": "{biome_id:\"minecraft:tall_birch_forest\"}"
                 }
               ]
             },
@@ -1137,7 +1137,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:156}"
+                  "tag": "{biome_id:\"minecraft:tall_birch_hills\"}"
                 }
               ]
             },
@@ -1155,7 +1155,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:157}"
+                  "tag": "{biome_id:\"minecraft:dark_forest_hills\"}"
                 }
               ]
             },
@@ -1173,7 +1173,7 @@
               "functions": [
                 {
                  "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:158}"
+                  "tag": "{biome_id:\"minecraft:snowy_taiga_mountains\"}"
                 }
               ]
             },
@@ -1191,7 +1191,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:159}"
+                  "tag": "{biome_id:\"minecraft:giant_spruce_taiga\"}"
                 }
               ]
             },
@@ -1209,7 +1209,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:161}"
+                  "tag": "{biome_id:\"minecraft:gaint_spruce_taiga_hills\"}"
                 }
               ]
             },
@@ -1227,7 +1227,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:162}"
+                  "tag": "{biome_id:\"minecraft:modified_gravelly_mountains\"}"
                 }
               ]
             },
@@ -1245,7 +1245,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:163}"
+                  "tag": "{biome_id:\"minecraft:shattered_savanna\"}"
                 }
               ]
             },
@@ -1263,7 +1263,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:164}"
+                  "tag": "{biome_id:\"minecraft:shattered_savanna_plateau\"}"
                 }
               ]
             },
@@ -1281,7 +1281,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:165}"
+                  "tag": "{biome_id:\"minecraft:eroded_badlands\"}"
                 }
               ]
             },
@@ -1299,7 +1299,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:166}"
+                  "tag": "{biome_id:\"minecraft:modified_wooded_badlands_plateau\"}"
                 }
               ]
             },
@@ -1317,7 +1317,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:167}"
+                  "tag": "{biome_id:\"minecraft:modified_badlands_plateau\"}"
                 }
               ]
             },
@@ -1335,7 +1335,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:168}"
+                  "tag": "{biome_id:\"minecraft:bamboo_jungle\"}"
                 }
               ]
             },
@@ -1353,7 +1353,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:169}"
+                  "tag": "{biome_id:\"minecraft:bamboo_jungle_hills\"}"
                 }
               ]
             },
@@ -1371,7 +1371,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:170}"
+                  "tag": "{biome_id:\"minecraft:soul_sand_valley\"}"
                 }
               ]
             },
@@ -1389,7 +1389,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:171}"
+                  "tag": "{biome_id:\"minecraft:crimson_forest\"}"
                 }
               ]
             },
@@ -1407,7 +1407,7 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:172}"
+                  "tag": "{biome_id:\"minecraft:warped_forest\"}"
                 }
               ]
             },
@@ -1425,7 +1425,17 @@
               "functions": [
                 {
                   "function": "minecraft:set_nbt",
-                  "tag": "{biome_id:173}"
+                  "tag": "{biome_id:\"minecraft:basalt_deltas\"}"
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:golden_hoe",
+              "functions": [
+                {
+                  "function": "minecraft:set_nbt",
+                  "tag": "{biome_id:0}"
                 }
               ]
             }

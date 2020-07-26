@@ -28,7 +28,7 @@ execute unless score incr_id du_uuid matches ..2147483647 run scoreboard players
 #init modules
 function du:base/init
 function du:math/init
-function du:world/init
+function du:world/utils/init
 
 #schedule load message
 schedule function du:load_message 2s
