@@ -15,7 +15,6 @@ scoreboard players set $crafting.out_7 du_data 1
 scoreboard players set $crafting.out_8 du_data 1
 
 function #du:recipes/crafting
-execute if block ~ ~ ~ #du:internal/chest-like{Items:[{id:"minecraft:stick"}]} run replaceitem block ~ ~ ~ container.16 minecraft:diamond
 
 execute store result score $crafting.out du_data run data get block ~ ~ ~ Items[{Slot:16b}].Count
 execute if score $crafting.out du_data matches 1.. run function du:custom_crafter/check_output

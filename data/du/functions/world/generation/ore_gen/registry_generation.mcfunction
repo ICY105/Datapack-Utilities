@@ -28,7 +28,7 @@ execute store result score $world.temp_0 du_data run data get storage du:temp li
 
 #check biome list
 scoreboard players set $world.out_0 du_data 1
-execute if score $world.temp_0 du_data matches -1 if data storage du:temp list.biomes[0] run scoreboard players set $world.out_0 du_data 2
+execute if score $world.temp_0 du_data matches -1 unless data storage du:temp list.biomes[0] run scoreboard players set $world.out_0 du_data 2
 execute if score $world.temp_0 du_data matches 0..1 run function du:world/generation/ore_gen/check_biomes
 execute if score $world.temp_0 du_data = $world.out_0 du_data run scoreboard players set $world.out_0 du_data 2
 execute if score $world.out_0 du_data matches 2 run function du:world/generation/ore_gen/generate_veins
