@@ -1,3 +1,4 @@
+
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:lava_bucket"}]} run data merge block ~ ~ ~ {BurnTime:20000s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:lava_bucket"}]} run replaceitem block ~ ~ ~ container.1 bucket 2
 
@@ -15,6 +16,8 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:s
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:jungle_log"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:acacia_log"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:dark_oak_log"}]} run data merge block ~ ~ ~ {BurnTime:300s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:crimson_stem"}]} run data merge block ~ ~ ~ {BurnTime:300s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:warped_stem"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:oak_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:birch_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
@@ -22,6 +25,8 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:s
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:jungle_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:acacia_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:dark_oak_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:crimson_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:1b,id:"minecraft:warped_planks"}]} run data merge block ~ ~ ~ {BurnTime:300s}
 
 execute if block ~ ~ ~ #du:internal/furnace-like{BurnTime:0s} run function du:custom_furnace/fuel_2
 
