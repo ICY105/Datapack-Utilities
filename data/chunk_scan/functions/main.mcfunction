@@ -1,2 +1,2 @@
-schedule function chunk_scan:main 2t replace
-execute as @a[tag=!chunk_scan.disabled] at @s run function chunk_scan:player
+schedule function chunk_scan:main 4t replace
+execute as @r[tag=!chunk_scan.disabled] at @s run function chunk_scan:player
