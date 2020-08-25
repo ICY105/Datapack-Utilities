@@ -1,4 +1,5 @@
 {
+	"required":false,
 	"values":[
 		"minecraft:wooden_pickaxe",
 		"minecraft:stone_pickaxe",

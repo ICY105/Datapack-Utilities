@@ -12,11 +12,8 @@ scoreboard objectives add du_jump minecraft.custom:minecraft.jump
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add pregen_radius trigger
 
-scoreboard objectives add du_health dummy
-scoreboard objectives add du_armor armor
-
 #version: ( - for prerelease) XX.XX.XX.XX
-scoreboard players set $du.ver load 2020002
+scoreboard players set $du.ver load 2020100
 
 #Team Data
 team add du_nopush

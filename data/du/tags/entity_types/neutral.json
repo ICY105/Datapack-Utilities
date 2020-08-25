@@ -1,8 +1,11 @@
 {
+	"required":false,
 	"values": [
+		"minecraft:bee",
 		"minecraft:dolphin",
 		"minecraft:polar_bear",
 		"minecraft:wolf",
+		"minecraft:fox",
 		"minecraft:cave_spider",
 		"minecraft:enderman",
 		"minecraft:iron_golem",

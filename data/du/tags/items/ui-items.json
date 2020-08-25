@@ -1,4 +1,5 @@
 {
+	"required":false,
 	"values":[
 		"minecraft:cobblestone",
 		"minecraft:gray_stained_glass_pane",

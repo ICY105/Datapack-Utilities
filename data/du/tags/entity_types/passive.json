@@ -1,6 +1,8 @@
 {
+	"required":false,
 	"values": [
 		"minecraft:bat",
+		"minecraft:cat",
 		"minecraft:chicken",
 		"minecraft:cod",
 		"minecraft:cow",
