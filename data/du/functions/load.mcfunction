@@ -13,7 +13,7 @@ scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_village
 scoreboard objectives add pregen_radius trigger
 
 #version: ( - for prerelease) XX.XX.XX.XX
-scoreboard players set $du.ver load 2020100
+scoreboard players set $du.ver load 2020101
 
 #Team Data
 team add du_nopush
