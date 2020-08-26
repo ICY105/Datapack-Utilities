@@ -10,4 +10,3 @@ execute if data block ~ ~ ~ Items[{Slot:2b}].tag.du_smelt_id run function du:cus
 
 #slot 3
 execute if data block ~ ~ ~ Items[{Slot:3b}].tag.du_smelt_id run function du:custom_campfire/process_3
-
