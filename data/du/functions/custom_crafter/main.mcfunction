@@ -1,4 +1,5 @@
 #UI
+data remove block -29999999 0 1601 Items
 data modify block -29999999 0 1601 Items set from block ~ ~ ~ Items
 data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 replaceitem block -29999999 0 1601 container.2 air

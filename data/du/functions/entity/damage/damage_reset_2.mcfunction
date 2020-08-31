@@ -1,29 +1,7 @@
 
-tag @s remove du_damage_reset
 
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-0
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-1
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-2
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-3
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-4
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-5
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-6
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-7
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-8
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-9
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-a
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-b
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-c
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-d
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-e
-attribute @s minecraft:generic.max_health modifier remove a-b-c-d-f
+execute store result score $entity.temp_0 du_data run data get entity @s Health 10
+execute store result score $entity.temp_1 du_data run attribute @s minecraft:generic.max_health get 10
 
-
-
-
-
-
-
-
-
-
+execute if score $entity.temp_0 du_data <= $entity.temp_1 du_data run function du:entity/damage/damage_reset_3
+execute if score $entity.temp_0 du_data > $entity.temp_1 du_data run schedule function du:entity/damage/damage_reset 1t

@@ -30,15 +30,15 @@ execute if score $entity.in_1 du_data matches 1 run scoreboard players operation
 
 #modify health
 execute store result score $entity.out_1 du_data run attribute @s minecraft:generic.max_health get 10
+execute store result score $entity.temp_1 du_data run data get entity @s Health 10 
 
 scoreboard players operation $entity.temp_0 du_data = $entity.out_1 du_data
-execute store result score $entity.temp_1 du_data run data get entity @s Health 10 
 scoreboard players operation $entity.temp_1 du_data -= $entity.out_0 du_data
 scoreboard players operation $entity.temp_0 du_data -= $entity.temp_1 du_data
 
-execute if score $entity.temp_0 du_data < $entity.out_1 du_data run tag @s add du_damage_reset
-execute if score $entity.temp_0 du_data < $entity.out_1 du_data run schedule function du:entity/damage/damage_reset 1t
-execute if score $entity.temp_0 du_data > $entity.out_1 du_data run kill @s
+tag @s add du_damage_reset
+schedule function du:entity/damage/damage_reset 1t
+execute if score $entity.temp_0 du_data >= $entity.out_1 du_data run kill @s
 
 execute if entity @s[tag=du_damage_reset] if score $entity.temp_0 du_data matches 500.. run attribute @s minecraft:generic.max_health modifier add a-b-c-d-f "generic.max_health" -50 add
 execute if entity @s[tag=du_damage_reset] if score $entity.temp_0 du_data matches 500.. run scoreboard players remove $entity.temp_0 du_data 500
