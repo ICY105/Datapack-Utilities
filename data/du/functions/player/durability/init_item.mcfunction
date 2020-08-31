@@ -38,6 +38,12 @@ execute if data storage du:temp object{id:"minecraft:diamond_axe"} run data modi
 execute if data storage du:temp object{id:"minecraft:diamond_shovel"} run data modify storage du:temp object.tag.du_dur.item_dur set value 1561
 execute if data storage du:temp object{id:"minecraft:diamond_hoe"} run data modify storage du:temp object.tag.du_dur.item_dur set value 1561
 
+execute if data storage du:temp object{id:"minecraft:netherite_sword"} run data modify storage du:temp object.tag.du_dur.item_dur set value 2031
+execute if data storage du:temp object{id:"minecraft:netherite_pickaxe"} run data modify storage du:temp object.tag.du_dur.item_dur set value 2031
+execute if data storage du:temp object{id:"minecraft:netherite_axe"} run data modify storage du:temp object.tag.du_dur.item_dur set value 2031
+execute if data storage du:temp object{id:"minecraft:netherite_shovel"} run data modify storage du:temp object.tag.du_dur.item_dur set value 2031
+execute if data storage du:temp object{id:"minecraft:netherite_hoe"} run data modify storage du:temp object.tag.du_dur.item_dur set value 2031
+
 
 
 execute if data storage du:temp object{id:"minecraft:leather_helmet"} run data modify storage du:temp object.tag.du_dur.item_dur set value 55
@@ -64,6 +70,11 @@ execute if data storage du:temp object{id:"minecraft:diamond_helmet"} run data m
 execute if data storage du:temp object{id:"minecraft:diamond_chestplate"} run data modify storage du:temp object.tag.du_dur.item_dur set value 528
 execute if data storage du:temp object{id:"minecraft:diamond_leggings"} run data modify storage du:temp object.tag.du_dur.item_dur set value 495
 execute if data storage du:temp object{id:"minecraft:diamond_boots"} run data modify storage du:temp object.tag.du_dur.item_dur set value 429
+
+execute if data storage du:temp object{id:"minecraft:netherite_helmet"} run data modify storage du:temp object.tag.du_dur.item_dur set value 407
+execute if data storage du:temp object{id:"minecraft:netherite_chestplate"} run data modify storage du:temp object.tag.du_dur.item_dur set value 592
+execute if data storage du:temp object{id:"minecraft:netherite_leggings"} run data modify storage du:temp object.tag.du_dur.item_dur set value 555
+execute if data storage du:temp object{id:"minecraft:netherite_boots"} run data modify storage du:temp object.tag.du_dur.item_dur set value 481
 
 
 

@@ -28,6 +28,12 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:d
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:diamond_shovel"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:diamond_hoe"}]} run scoreboard players set $crafting.temp_0 du_data 0
 
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_sword"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_pickaxe"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_axe"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_shovel"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_hoe"}]} run scoreboard players set $crafting.temp_0 du_data 0
+
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:leather_helmet"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:leather_chestplate"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:leather_leggings"}]} run scoreboard players set $crafting.temp_0 du_data 0
@@ -52,6 +58,11 @@ execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:d
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:diamond_chestplate"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:diamond_leggings"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:diamond_boots"}]} run scoreboard players set $crafting.temp_0 du_data 0
+
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_helmet"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_chestplate"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_leggings"}]} run scoreboard players set $crafting.temp_0 du_data 0
+execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:netherite_boots"}]} run scoreboard players set $crafting.temp_0 du_data 0
 
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:bow"}]} run scoreboard players set $crafting.temp_0 du_data 0
 execute if block ~ ~ ~ #du:internal/furnace-like{Items:[{Slot:2b,id:"minecraft:trident"}]} run scoreboard players set $crafting.temp_0 du_data 0
