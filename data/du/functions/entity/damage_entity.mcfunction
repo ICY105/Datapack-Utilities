@@ -52,6 +52,8 @@ scoreboard players operation $entity.temp_0 du_data -= $entity.temp_1 du_data
 
 tag @s add du_damage_reset
 schedule function du:entity/damage/damage_reset 1t
+
+execute if score $entity.temp_0 du_data >= $entity.out_1 du_data run function du:entity/damage/damage_reset_3
 execute if score $entity.temp_0 du_data >= $entity.out_1 du_data run kill @s
 
 execute if score $base.timer_10 du_data matches 0 if entity @s[tag=du_damage_reset] run function du:entity/damage/apply_damage_0
