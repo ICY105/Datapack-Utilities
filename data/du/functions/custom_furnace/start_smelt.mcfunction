@@ -1,4 +1,5 @@
-scoreboard players operation @s du_move_x = $crafting.temp_0 du_data
+
+execute store result score @s du_move_x run data get block ~ ~ ~ Items[{Slot:0b}].tag.du_smelt_id
 scoreboard players set @s du_data 0
 
 scoreboard players set $crafting.temp_0 du_data 0

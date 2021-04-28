@@ -15,3 +15,5 @@ execute store result block ~ ~ ~ Items[{Slot:2b}].Count byte 1 run scoreboard pl
 execute store result score $crafting.temp_0 du_data run data get block ~ ~ ~ Items[{Slot:0b}].Count
 scoreboard players remove $crafting.temp_0 du_data 1
 execute store result block ~ ~ ~ Items[{Slot:0b}].Count byte 1 run scoreboard players get $crafting.temp_0 du_data
+
+scoreboard players set @s du_data 0
