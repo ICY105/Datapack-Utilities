@@ -8,6 +8,8 @@
 		"#minecraft:walls",
 		"#minecraft:signs",
 		"#minecraft:coral_plants",
+		"#minecraft:rails",
+		"#minecraft:candles",
 		"minecraft:sea_pickle",
 		"minecraft:seagrass",
 		"minecraft:tall_seagrass",
@@ -17,6 +19,12 @@
 		"minecraft:trapped_chest",
 		"minecraft:ender_chest",
 		"minecraft:scaffolding",
-		"minecraft:campfire"
+		"minecraft:campfire",
+		"minecraft:lightning_rod",
+		"minecraft:sculk_sensor",
+		"minecraft:hanging_roots",
+		"minecraft:big_dripleaf",
+		"minecraft:small_dripleaf",
+		"minecraft:pointed_dripstone"
 	]
 }

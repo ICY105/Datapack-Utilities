@@ -1,5 +1,6 @@
 {
 	"values": [
+		"#minecraft:candles",
 		"minecraft:beacon",
 		"minecraft:end_gateway",
 		"minecraft:end_portal",
@@ -30,6 +31,13 @@
 		"minecraft:soul_fire",
 		"minecraft:soul_torch",
 		"minecraft:soul_lantern",
-		"minecraft:soul_campfire"
+		"minecraft:soul_campfire",
+		"minecraft:light",
+		"minecraft:small_amethyst_bud",
+		"minecraft:medium_amethyst_bud",
+		"minecraft:large_amethyst_bud",
+		"minecraft:amethyst_cluster",
+		"minecraft:cave_vines",
+		"minecraft:glow_lichen"
 	]
 } 

@@ -2,6 +2,7 @@
 	"required":false,
 	"values":[
 		"minecraft:cobblestone",
+		"minecraft:carrot_on_a_stick",
 		"minecraft:gray_stained_glass_pane",
 		"minecraft:command_block",
 		"minecraft:chain_command_block",
