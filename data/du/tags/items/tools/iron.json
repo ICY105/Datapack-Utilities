@@ -1,0 +1,10 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:iron_sword",
+		"minecraft:iron_pickaxe",
+		"minecraft:iron_axe",
+		"minecraft:iron_shovel",
+		"minecraft:iron_hoe"
+	]
+}

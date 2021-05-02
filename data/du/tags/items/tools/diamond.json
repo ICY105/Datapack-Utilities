@@ -1,0 +1,10 @@
+{
+	"required":false,
+	"values":[
+		"minecraft:diamond_sword",
+		"minecraft:diamond_pickaxe",
+		"minecraft:diamond_axe",
+		"minecraft:diamond_shovel",
+		"minecraft:diamond_hoe"
+	]
+}

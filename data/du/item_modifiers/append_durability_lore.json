@@ -1,0 +1,38 @@
+[
+  {
+    "function": "minecraft:copy_nbt",
+    "source": {
+      "type": "minecraft:storage",
+      "source": "du:temp"
+    },
+    "ops": [
+      {
+        "source": "object.tag",
+        "target": "{}",
+        "op": "merge"
+      }
+    ]
+  },
+  {
+    "function": "minecraft:set_lore",
+    "entity": "this",
+    "lore": [
+      {
+        "translate": "item.durability",
+		"with": [
+		  {
+            "nbt": "object.tag.du_dur.dur",
+            "storage": "du:temp"
+          },
+          {
+            "nbt": "object.tag.du_dur.max_dur",
+            "storage": "du:temp"
+          }
+		],
+        "color": "gray",
+        "italic": false
+      }
+    ],
+    "replace": false
+  }
+]

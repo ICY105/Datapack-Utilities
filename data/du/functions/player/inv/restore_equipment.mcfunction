@@ -1,3 +1,7 @@
 
-data remove block -29999999 0 1601 Items.[{tag:{du_gui:1b}}]
-loot replace entity @s weapon.mainhand mine -29999999 0 1601 minecraft:air{drop_contents:1b}
+item entity @s weapon.mainhand copy block -29999999 0 1601 container.0
+item entity @s weapon.offhand copy block -29999999 0 1601 container.1
+item entity @s armor.feet copy block -29999999 0 1601 container.2
+item entity @s armor.legs copy block -29999999 0 1601 container.3
+item entity @s armor.chest copy block -29999999 0 1601 container.4
+item entity @s armor.head copy block -29999999 0 1601 container.5

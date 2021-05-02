@@ -1,19 +1,13 @@
 
-#load item
-execute if score temp_9 du_data matches 0 run function du:player/inv/get_equipment
-scoreboard players set temp_9 du_data 1
-
 #modify item
-data modify storage du:temp object set from block -29999999 0 1601 Items[0]
-execute positioned -29999999 0 1601 unless block ~ ~ ~ green_shulker_box{Items:[{Slot:0b,tag:{du_dur:{init:1b}} }]} run function du:player/durability/init_item
-execute positioned -29999999 0 1601 if block ~ ~ ~ green_shulker_box{Items:[{Slot:0b,tag:{du_dur:{item_dur:0}} }]} run function du:player/durability/process_item_unbreakable
-execute positioned -29999999 0 1601 unless block ~ ~ ~ green_shulker_box{Items:[{Slot:0b,tag:{du_dur:{item_dur:0}} }]} run function du:player/durability/process_item_durability
-data modify block -29999999 0 1601 Items[0] set from storage du:temp object
+data modify storage du:temp object set from entity @s SelectedItem
+execute unless data storage du:temp object.tag.du_dur{init:1b} run function du:player/durability/init_item
 
-#set lore
-data merge block -29999999 0 1602 {Text1:'[{"translate":"item.durability","color":"gray","italic":false,"with":[{"nbt":"Items[0].tag.du_dur.dur","block":"-29999999 0 1601","color":"gray","italic":false},{"nbt":"Items[0].tag.du_dur.max_dur","block":"-29999999 0 1601","color":"gray","italic":false}]}]'}
-data modify block -29999999 0 1601 Items[0].tag.display.Lore[-1] set from block -29999999 0 1602 Text1
+function du:player/durability/change_durability
+data remove storage du:temp object.tag.display.Lore[-1]
 
 #destroy item if broken
-execute if score out_0 du_data matches 0 run replaceitem block -29999999 0 1601 container.0 minecraft:barrier{du_gui:1b}
-execute if score out_0 du_data matches 0 run playsound minecraft:entity.item.break player @a[distance=..16]
+item entity @s weapon.mainhand modify du:append_durability_lore
+execute if score $player.out_0 du_data matches -1..0 run playsound minecraft:entity.item.break player @a[distance=..16]
+execute if score $player.out_0 du_data matches 0 run item entity @s weapon.mainhand replace minecraft:air
+

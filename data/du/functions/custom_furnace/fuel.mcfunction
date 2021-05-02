@@ -2,7 +2,7 @@
 data modify storage du:temp obj set from block ~ ~ ~ Items[{Slot:1b}]
 
 execute if data storage du:temp obj{id:"minecraft:lava_bucket"} run data merge block ~ ~ ~ {BurnTime:20000s}
-execute if data storage du:temp obj{id:"minecraft:lava_bucket"} run replaceitem block ~ ~ ~ container.1 bucket 2
+execute if data storage du:temp obj{id:"minecraft:lava_bucket"} run item block ~ ~ ~ container.1 replace bucket
 
 execute if data storage du:temp obj{id:"minecraft:coal_block"} run data merge block ~ ~ ~ {BurnTime:16000s}
 execute if data storage du:temp obj{id:"minecraft:dried_kelp_block"} run data merge block ~ ~ ~ {BurnTime:4000s}

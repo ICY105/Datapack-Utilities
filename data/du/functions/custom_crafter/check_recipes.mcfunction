@@ -1,5 +1,5 @@
 
-replaceitem block ~ ~ ~ container.16 air
+item block ~ ~ ~ container.16 replace air
 tag @s remove du_has_recipe
 
 function du:custom_crafter/inv/get_crafting_count

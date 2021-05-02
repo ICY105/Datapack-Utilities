@@ -1,16 +1,15 @@
 {
 	"display": {
 		"title": "Datapack Utils",
-		"description": "Running Datapack Utils by ImCoolYeah105",
+		"description": "v2.3.0 Prerelease 1",
 		"icon": {
-			"item": "minecraft:player_head",
-            "nbt": "{SkullOwner:\"ImCoolYeah105\"}"
+			"item": "minecraft:redstone"
 		},
 		"show_toast": false,
 		"announce_to_chat": false,
-		"frame": "goal",
-		"background":"minecraft:textures/block/blue_ice.png"
+		"frame": "goal"
     },
+    "parent": "global:icy105",
 	"criteria": {
         "always": {
 			"trigger": "minecraft:tick"
