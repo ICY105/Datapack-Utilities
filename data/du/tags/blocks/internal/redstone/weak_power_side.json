@@ -9,6 +9,7 @@
 		"minecraft:tripwire_hook",
 		"minecraft:redstone_torch",
 		"minecraft:redstone_block",
-		"minecraft:daylight_detector"
+		"minecraft:daylight_detector",
+		"minecraft:sculk_sensor"
 	]
 }
