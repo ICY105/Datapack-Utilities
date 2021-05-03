@@ -11,8 +11,11 @@ function du:world/utils/get_biome
 data modify storage du:temp object.biome set from storage du:temp output
 
 #get pos
+tp @s ~ ~ ~
 execute store result score $world.x du_data run data get entity @s Pos[0]
+execute store result score $world.y du_data run data get entity @s Pos[1]
 execute store result score $world.z du_data run data get entity @s Pos[2]
+tp @s ~ 0 ~
 
 #reset LCG
 scoreboard players set $world.rng_seed du_data -2147483648

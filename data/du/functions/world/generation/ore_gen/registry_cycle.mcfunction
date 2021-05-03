@@ -1,5 +1,6 @@
 
 ## $world.x: x cord
+## $world.y: world bottom
 ## $world.z: z cord
 ## $world.dim: current dimension
 ## $world.biome: current biome

@@ -1,5 +1,6 @@
 
 ## $world.x: x cord
+## $world.y: world bottom
 ## $world.z: z cord
 ## $world.dim: current dimension
 ## $world.biome: current biome
@@ -31,7 +32,12 @@ scoreboard players set $world.out_0 du_data 1
 execute if score $world.temp_0 du_data matches -1 unless data storage du:temp list.biomes[0] run scoreboard players set $world.out_0 du_data 2
 execute if score $world.temp_0 du_data matches 0..1 run function du:world/generation/ore_gen/check_biomes
 execute if score $world.temp_0 du_data = $world.out_0 du_data run scoreboard players set $world.out_0 du_data 2
-execute if score $world.out_0 du_data matches 2 run function du:world/generation/ore_gen/generate_veins
+
+#fix entry if outside bounds
+execute if score $world.in_1 du_data < $world.y du_data run scoreboard players operation $world.in_1 du_data = $world.y
+
+#generate if valid
+execute if score $world.out_0 du_data matches 2 if score $world.in_1 du_data < $world.in_2 du_data run function du:world/generation/ore_gen/generate_veins
 
 ### remove entry, then repeat until temp is empty
 data remove storage du:temp list[0]

@@ -19,8 +19,8 @@
 scoreboard players set $world.out_0 du_data 0
 
 #checks Y values
-execute unless score $world.in_0 du_data matches 0..255 run scoreboard players set $world.out_0 du_data -1
-execute unless score $world.in_1 du_data matches 0..255 run scoreboard players set $world.out_0 du_data -1
+execute unless score $world.in_0 du_data matches -2048..2048 run scoreboard players set $world.out_0 du_data -1
+execute unless score $world.in_1 du_data matches -2048..2048 run scoreboard players set $world.out_0 du_data -1
 execute unless score $world.in_0 du_data <= $world.in_0 du_data run scoreboard players set $world.out_0 du_data -1
 
 #checks veins to generate
