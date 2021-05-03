@@ -7,7 +7,7 @@ execute if score $base.timer_2 du_data matches 0 as @e[tag=du_click_entity] at @
 execute as @a at @s run function du:player/player
 
 #Items
-execute as @e[type=item,tag=!du_item_checked] at @s run function du:base/items
+execute as @e[type=item,tag=!du_item_checked,tag=!global.ignore] at @s run function du:base/items
 
 #Custom Furnace
 execute if score $base.timer_20 du_data matches 2 as @e[tag=du_furnace] at @s run function du:custom_furnace/main
