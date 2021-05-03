@@ -23,5 +23,6 @@ execute if score $base.timer_20 du_data matches 0 run function du:player/uuid/ge
 execute if entity @s[nbt={Inventory:[{tag:{du_gui:1b}}]}] run clear @s #du:ui-items{du_gui:1b}
 
 #reset scores
+execute if entity @s[tag=du_damage_reset] run function du:entity/reset_damage/reset_1
 scoreboard players set @s du_talked 0
 tag @s remove du_hit_entity
