@@ -1,12 +1,12 @@
 
-item block -29999999 0 1601 container.0 copy entity @s hotbar.0
-item block -29999999 0 1601 container.1 copy entity @s hotbar.1
-item block -29999999 0 1601 container.2 copy entity @s hotbar.2
+item replace block -29999999 0 1601 container.0 from entity @s hotbar.0
+item replace block -29999999 0 1601 container.1 from entity @s hotbar.1
+item replace block -29999999 0 1601 container.2 from entity @s hotbar.2
 
-item block -29999999 0 1601 container.3 copy entity @s hotbar.3
-item block -29999999 0 1601 container.4 copy entity @s hotbar.4
-item block -29999999 0 1601 container.5 copy entity @s hotbar.5
+item replace block -29999999 0 1601 container.3 from entity @s hotbar.3
+item replace block -29999999 0 1601 container.4 from entity @s hotbar.4
+item replace block -29999999 0 1601 container.5 from entity @s hotbar.5
 
-item block -29999999 0 1601 container.6 copy entity @s hotbar.6
-item block -29999999 0 1601 container.7 copy entity @s hotbar.7
-item block -29999999 0 1601 container.8 copy entity @s hotbar.8
+item replace block -29999999 0 1601 container.6 from entity @s hotbar.6
+item replace block -29999999 0 1601 container.7 from entity @s hotbar.7
+item replace block -29999999 0 1601 container.8 from entity @s hotbar.8

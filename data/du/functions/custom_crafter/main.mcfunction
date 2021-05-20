@@ -1,6 +1,6 @@
 
 #ui
-execute if score $base.timer_20 du_data matches 10 run function du:custom_crafter/main_ui
+execute if data block ~ ~ ~ Items[0] run function du:custom_crafter/main_ui
 
 #check recipes
 execute if entity @s[tag=du_has_recipe] store result score $crafting.out du_data run data get block ~ ~ ~ Items[{Slot:16b}].Count
@@ -10,6 +10,3 @@ execute if entity @s[tag=du_has_recipe] if score $crafting.out du_data < @s du_d
 execute if entity @s[tag=du_has_recipe] run function du:custom_crafter/check_recipes
 
 execute if entity @s[tag=!du_has_recipe] if score $base.timer_20 du_data matches 0 if data block ~ ~ ~ Items[17] unless block ~ ~ ~ #du:internal/chest-like{Items:[{Slot:16b}]} run function du:custom_crafter/check_recipes
-
-#freeze hoppers
-execute if block ~ ~-1 ~ minecraft:hopper run data merge block ~ ~ ~ {TransferCooldown:300}

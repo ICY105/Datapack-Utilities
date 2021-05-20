@@ -1,7 +1,7 @@
 
-item entity @s weapon.mainhand copy block -29999999 0 1601 container.0
-item entity @s weapon.offhand copy block -29999999 0 1601 container.1
-item entity @s armor.feet copy block -29999999 0 1601 container.2
-item entity @s armor.legs copy block -29999999 0 1601 container.3
-item entity @s armor.chest copy block -29999999 0 1601 container.4
-item entity @s armor.head copy block -29999999 0 1601 container.5
+item replace entity @s weapon.mainhand from block -29999999 0 1601 container.0
+item replace entity @s weapon.offhand from block -29999999 0 1601 container.1
+item replace entity @s armor.feet from block -29999999 0 1601 container.2
+item replace entity @s armor.legs from block -29999999 0 1601 container.3
+item replace entity @s armor.chest from block -29999999 0 1601 container.4
+item replace entity @s armor.head from block -29999999 0 1601 container.5

@@ -1,5 +1,5 @@
 
-item block ~ ~ ~ container.16 replace air
+item replace block ~ ~ ~ container.16 with air
 tag @s remove du_has_recipe
 
 execute store result score $crafting.in_0 du_data run data get block ~ ~ ~ Items[{Slot:2b}].Count
