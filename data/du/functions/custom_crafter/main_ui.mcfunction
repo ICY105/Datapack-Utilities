@@ -13,6 +13,7 @@ item replace block -29999999 0 1601 container.13 with air
 item replace block -29999999 0 1601 container.20 with air
 item replace block -29999999 0 1601 container.21 with air
 item replace block -29999999 0 1601 container.22 with air
+data remove block -29999999 0 1601 Items[{tag:{du_gui:1b}}]
 execute if entity @s[tag=du_has_recipe] run item replace block -29999999 0 1601 container.16 with air
 
 #move bad items if possible
