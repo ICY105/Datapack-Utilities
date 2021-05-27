@@ -26,7 +26,9 @@
 	  "condition": "minecraft:location_check",
 	  "predicate": {
 		"block": {
-		  "block": "minecraft:redstone_block"
+		  "blocks": [
+		    "minecraft:redstone_block"
+		  ]
 		}
 	  }
 	},
