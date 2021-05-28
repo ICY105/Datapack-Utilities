@@ -16,3 +16,4 @@ item replace block ~ ~ ~ container.23 with minecraft:air
 item replace block ~ ~ ~ container.24 with minecraft:air
 item replace block ~ ~ ~ container.25 with minecraft:air
 item replace block ~ ~ ~ container.26 with minecraft:air
+execute if entity @s[tag=!du_has_recipe] run item replace block ~ ~ ~ container.16 with air
