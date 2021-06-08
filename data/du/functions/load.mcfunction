@@ -12,9 +12,9 @@ scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_village
 scoreboard objectives add pregen_radius trigger
 
 #version
-scoreboard players set $du.ver.major load 2
-scoreboard players set $du.ver.minor load 3
-scoreboard players set $du.ver.fix load 0
+scoreboard players set $du.ver.major load.status 2
+scoreboard players set $du.ver.minor load.status 3
+scoreboard players set $du.ver.fix load.status 0
 
 #Team Data
 team add du_nopush
@@ -28,5 +28,6 @@ function du:base/init
 function du:math/init
 function du:world/utils/init
 
-#schedule load message
+#schedule
 schedule function du:load_message 2s
+schedule function du:main 2t

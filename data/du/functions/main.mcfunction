@@ -1,4 +1,6 @@
 
+schedule function du:main 1t
+
 #Base
 function du:base/base
 
