@@ -1,7 +1,6 @@
 
 #> $world.x: x cord
 #> $world.z: z cord
-#> $world.dim: current dimension
 #* $world.seed: world seed
 
 #data
