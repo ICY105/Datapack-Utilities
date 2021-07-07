@@ -12,7 +12,7 @@ function du:player/durability/get_max_durability
 scoreboard players operation $player.temp_1 du_data -= $player.temp_2 du_data
 scoreboard players operation $player.temp_0 du_data += $player.temp_1 du_data
 scoreboard players operation $player.temp_1 du_data += $player.temp_2 du_data
-execute if score $player.temp_4 du_data matches 1.. if score $player.temp_0 du_data > $player.temp_4 du_data run scoreboard players operation $player.temp_0 du_data = $player.temp_4 du_data
+execute if score $player.temp_4 du_data matches 1.. if score $player.temp_0 du_data > $player.temp_3 du_data run scoreboard players operation $player.temp_0 du_data = $player.temp_3 du_data
 execute if score $player.temp_0 du_data matches ..-1 run scoreboard players set $player.temp_0 du_data -1
 execute if score $player.temp_4 du_data matches 1.. store result storage du:temp object.tag.du_dur.dur int 1 run scoreboard players get $player.temp_0 du_data
 
@@ -26,7 +26,7 @@ scoreboard players operation $player.temp_4 du_data -= $player.temp_5 du_data
 
 execute if score $player.temp_4 du_data matches 1.. if score $player.temp_4 du_data > $player.temp_6 du_data run scoreboard players operation $player.temp_4 du_data = $player.temp_6 du_data
 execute if score $player.temp_4 du_data matches 1.. store result storage du:temp object.tag.Damage int 1 run scoreboard players get $player.temp_4 du_data
-execute if score $player.temp_4 du_data matches 1.. store result storage du:temp object.tag.du_dur.damage int 1 run data get storage du:temp object.tag.Damage
+execute if score $player.temp_4 du_data matches 1.. store result storage du:temp object.tag.du_dur.damage int 1 run scoreboard players get $player.temp_4 du_data
 
 #change durability of unbreakable items
 execute if score $player.temp_4 du_data matches 0 store result score $player.temp_0 du_data run data get storage du:temp object.tag.du_dur.dur
