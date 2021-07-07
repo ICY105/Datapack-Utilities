@@ -10,7 +10,7 @@
           "children": [
             {
 			  "type": "minecraft:item",
-              "name": "minecraft:gold_ingot",
+              "name": "minecraft:copper_ingot",
 			  "functions": [
 			    {
                   "function": "minecraft:apply_bonus",
@@ -44,7 +44,7 @@
                   }
                 }
               ],
-              "name": "minecraft:gold_ore"
+              "name": "minecraft:deepslate_copper_ore"
             },
             {
               "type": "minecraft:item",
@@ -58,7 +58,7 @@
                   "function": "minecraft:explosion_decay"
                 }
               ],
-              "name": "minecraft:raw_gold"
+              "name": "minecraft:raw_copper"
             }
           ]
         }
