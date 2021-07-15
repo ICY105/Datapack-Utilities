@@ -1,5 +1,5 @@
 {
-	"values":[
+	"values": [
 		"#du:flowers",
 		"#du:crops",
 		"minecraft:grass",
@@ -25,6 +25,10 @@
 		"minecraft:weeping_vines",
 		"minecraft:weeping_vines_plant",
 		"minecraft:twisting_vines",
-		"minecraft:twisting_vines_plant"
+		"minecraft:twisting_vines_plant",
+		"minecraft:azalea",
+		"minecraft:flowering_azalea",
+		"minecraft:big_dripleaf",
+		"minecraft:small_dripleaf"
 	]
 }
