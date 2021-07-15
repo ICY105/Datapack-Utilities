@@ -1,6 +1,7 @@
 {
-	"required":false,
+	"required": false,
 	"values": [
+		"minecraft:axolotl",
 		"minecraft:bat",
 		"minecraft:cat",
 		"minecraft:chicken",
@@ -25,4 +26,4 @@
 		"minecraft:strider",
 		"minecraft:wandering_trader"
 	]
-} 
+}

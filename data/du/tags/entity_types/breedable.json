@@ -1,5 +1,5 @@
 {
-	"required":false,
+	"required": false,
 	"values": [
 		"minecraft:horse",
 		"minecraft:cow",
@@ -12,6 +12,8 @@
 		"minecraft:panda",
 		"minecraft:rabbit",
 		"minecraft:llama",
-		"minecraft:turtle"
+		"minecraft:turtle",
+		"minecraft:axolotl",
+		"minecraft:glow_squid"
 	]
 }
