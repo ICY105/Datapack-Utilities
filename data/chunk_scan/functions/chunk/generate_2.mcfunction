@@ -1,4 +1,7 @@
 
+tag @s remove chunk_scan.gen
+kill @e[tag=chunk_scan.gen,distance=..1]
+
 execute at @s[tag=chunk_scan.chunk] run function chunk_scan:chunk/spread
 
 execute at @s positioned ~ 0 ~ if predicate chunk_scan:world_bottom run function #chunk_scan:generate
