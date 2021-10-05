@@ -1,37 +1,24 @@
 {
-  "type": "minecraft:block",
-  "pools": [
-    {
-      "rolls": 1,
-      "entries": [
-        {
-		  "type": "minecraft:alternatives",
-          "children": [
-		    {
-			  "type": "minecraft:item",
-              "name": "minecraft:popped_chorus_fruit",
-              "functions": [
-				{
-				  "function": "minecraft:set_count",
-				  "count": {
-					"min": 0.0,
-					"max": 1.0,
-					"type": "minecraft:uniform"
+	"type": "minecraft:block",
+	"pools": [
+	  {
+		"rolls": 1,
+		"entries": [
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:chorus_fruit",
+			"conditions": [
+			  {
+				"condition": "minecraft:inverted",
+				"term": {
+				  "condition": "minecraft:match_tool",
+				  "predicate": {
+					"nbt": "{du_auto_smelt:1b}"
 				  }
 				}
-			  ],
-			  "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "nbt": "{du_auto_smelt:1b}"
-                  }
-                }
-              ]
-			},
-			{
-			  "type": "minecraft:item",
-			  "functions": [
+			  }
+			],
+			"functions": [
 				{
 				  "function": "minecraft:set_count",
 				  "count": {
@@ -43,12 +30,51 @@
 				{
 				  "function": "minecraft:explosion_decay"
 				}
-			  ],
-			  "name": "minecraft:chorus_fruit"
-			}
-		  ]
-        }
-      ]
-    }
-  ]
-}
+			]
+		  },
+		  {
+			"type": "minecraft:item",
+			"name": "minecraft:popped_chorus_fruit",
+			"conditions": [
+			  {
+				"condition": "minecraft:match_tool",
+				"predicate": {
+				  "nbt": "{du_auto_smelt:1b}"
+				}
+			  }
+			],
+			"functions": [
+				{
+				  "function": "minecraft:set_count",
+				  "count": {
+					"min": 0.0,
+					"max": 1.0,
+					"type": "minecraft:uniform"
+				  }
+				}
+			]
+		  }
+		]
+	  }
+	],
+	"__smithed__": {
+	  "rules": [
+		{
+		  "type":"smithed:append",
+		  "target":"pools[0].entries",
+		  "source":{
+			"type":"smithed:reference",
+			"path":"pools[0].entries[1]"
+		  }
+		},
+		{
+		  "type":"smithed:append",
+		  "target":"pools[0].entries[0].conditions",
+		  "source":{
+			"type":"smithed:reference",
+			"path":"pools[0].entries[0].conditions[0]"
+		  }
+		}
+	  ]
+	}
+  }

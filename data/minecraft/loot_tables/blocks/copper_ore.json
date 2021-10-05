@@ -9,15 +9,15 @@
           "type": "minecraft:alternatives",
           "children": [
             {
-			  "type": "minecraft:item",
+              "type": "minecraft:item",
               "name": "minecraft:copper_ingot",
-			  "functions": [
-			    {
+              "functions": [
+                {
                   "function": "minecraft:apply_bonus",
                   "enchantment": "minecraft:fortune",
                   "formula": "minecraft:ore_drops"
                 }
-			  ],
+              ],
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -26,8 +26,8 @@
                   }
                 }
               ]
-			},
-			{
+            },
+            {
               "type": "minecraft:item",
               "conditions": [
                 {
@@ -64,5 +64,17 @@
         }
       ]
     }
-  ]
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
 }

@@ -8,20 +8,20 @@
           "type": "minecraft:alternatives",
           "children": [
             {
-			  "type": "minecraft:item",
-			  "name": "minecraft:air",
-			  "conditions": [
-				{
-				  "condition": "minecraft:match_tool",
-				  "predicate": {
-					"nbt": "{du_trash:1b}"
-				  }
-				}
-			  ]
-			},
-			{
-			  "type": "minecraft:item",
-              "name": "minecraft:stone",
+              "type": "minecraft:item",
+              "name": "minecraft:air",
+              "conditions": [
+                {
+                  "condition": "minecraft:match_tool",
+                  "predicate": {
+                    "nbt": "{du_trash:1b}"
+                  }
+                }
+              ]
+            },
+            {
+              "type": "minecraft:item",
+              "name": "minecraft:smooth_stone",
               "conditions": [
                 {
                   "condition": "minecraft:match_tool",
@@ -30,8 +30,8 @@
                   }
                 }
               ]
-			},
-			{
+            },
+            {
               "type": "minecraft:item",
               "conditions": [
                 {
@@ -63,5 +63,25 @@
         }
       ]
     }
-  ]
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[1]"
+        }
+      },
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
 }
