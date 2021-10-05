@@ -23,7 +23,7 @@
                     ]
                   }
                 },
-				{
+                {
                   "condition": "minecraft:match_tool",
                   "predicate": {
                     "nbt": "{du_auto_smelt:1b}"
@@ -32,8 +32,8 @@
               ],
               "name": "minecraft:terracotta"
             },
-			{
-			  "type": "minecraft:item",
+            {
+              "type": "minecraft:item",
               "name": "minecraft:brick",
               "conditions": [
                 {
@@ -49,8 +49,8 @@
                   "count": 4
                 }
               ]
-			},
-			{
+            },
+            {
               "type": "minecraft:item",
               "conditions": [
                 {
@@ -86,5 +86,25 @@
         }
       ]
     }
-  ]
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[1]"
+        }
+      },
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
 }

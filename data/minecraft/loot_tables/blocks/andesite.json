@@ -5,32 +5,58 @@
       "rolls": 1,
       "entries": [
         {
-          "type": "minecraft:alternatives",
-          "children": [
+          "type": "minecraft:item",
+          "name": "minecraft:andesite",
+          "conditions": [
             {
-			  "type": "minecraft:item",
-              "name": "minecraft:air",
-              "conditions": [
-                {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "nbt": "{du_trash:1b}"
-                  }
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:match_tool",
+                "predicate": {
+                  "nbt": "{du_trash:1b}"
                 }
-              ]
-			},
+              }
+            }
+          ]
+        },
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:air",
+          "conditions": [
             {
-              "type": "minecraft:item",
-              "conditions": [
-                {
-                  "condition": "minecraft:survives_explosion"
-                }
-              ],
-              "name": "minecraft:andesite"
+              "condition": "minecraft:match_tool",
+              "predicate": {
+                "nbt": "{du_trash:1b}"
+              }
             }
           ]
         }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
       ]
     }
-  ]
+  ],
+  "__smithed__": {
+    "rules": [
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[1]"
+        }
+      },
+      {
+        "type":"smithed:append",
+        "target":"pools[0].entries[0].conditions",
+        "source":{
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].conditions[0]"
+        }
+      }
+    ]
+  }
 }

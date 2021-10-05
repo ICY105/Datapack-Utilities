@@ -51,5 +51,17 @@
         }
       ]
     }
-  ]
+  ],
+  "__smithed__": {
+    "rules":[
+      {
+        "type":"smithed:prepend",
+        "target":"pools[0].entries[0].children",
+        "source": {
+          "type":"smithed:reference",
+          "path":"pools[0].entries[0].children[0]"
+        }
+      }
+    ]
+  }
 }
