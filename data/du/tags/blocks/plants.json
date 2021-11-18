@@ -1,7 +1,7 @@
 {
 	"values": [
-		"#du:flowers",
 		"#du:crops",
+		"#minecraft:flowers",
 		"minecraft:grass",
 		"minecraft:fern",
 		"minecraft:dead_bush",
@@ -29,6 +29,7 @@
 		"minecraft:azalea",
 		"minecraft:flowering_azalea",
 		"minecraft:big_dripleaf",
-		"minecraft:small_dripleaf"
+		"minecraft:small_dripleaf",
+		"minecraft:hanging_roots"
 	]
 }

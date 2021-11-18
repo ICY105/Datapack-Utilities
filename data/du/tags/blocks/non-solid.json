@@ -1,13 +1,13 @@
 {
 	"values":[
 		"#du:air",
-		"#du:colors/beds",
 		"#du:plants",
 		"#du:colors/glass_panes",
 		"#du:heads",
 		"#du:fence_gates",
-		"#du:trapdoors",
 		"#du:pressure_plates",
+		"#du:torches",
+		"#du:fluids",
 		
 		"#minecraft:banners",
 		"#minecraft:anvil",
@@ -21,6 +21,10 @@
 		"#minecraft:carpets",
 		"#minecraft:fences",
 		"#minecraft:campfires",
+		"#minecraft:beds",
+		"#minecraft:trapdoors",
+		"#minecraft:candles",
+		"#minecraft:walls",
 		
 		"minecraft:chorus_plant",
 		"minecraft:chorus_flower",
@@ -37,7 +41,6 @@
 		"minecraft:snow",
 		"minecraft:ladder",
 		"minecraft:daylight_detector",
-		"minecraft:redstone_torch",
 		"minecraft:tripwire_hook",
 		"minecraft:lever",
 		"minecraft:repeater",
@@ -49,6 +52,14 @@
 		"minecraft:grindstone",
 		"minecraft:stonecutter",
 		"minecraft:cobweb",
-		"minecraft:piston_head"
+		"minecraft:piston_head",
+		"minecraft:sculk_sensor",
+		"minecraft:small_amethyst_bud",
+		"minecraft:medium_amethyst_bud",
+		"minecraft:large_amethyst_bud",
+		"minecraft:amethyst_cluster",
+		"minecraft:lightning_rod",
+		"minecraft:pointed_dripstone",
+		"minecraft:bamboo_sapling"
 	]
 }

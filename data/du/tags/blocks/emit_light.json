@@ -1,6 +1,8 @@
 {
 	"values": [
+		"#du:torches",
 		"#minecraft:candles",
+		
 		"minecraft:beacon",
 		"minecraft:end_gateway",
 		"minecraft:end_portal",
