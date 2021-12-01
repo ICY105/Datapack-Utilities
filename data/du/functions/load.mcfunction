@@ -16,7 +16,7 @@ scoreboard objectives add pregen_radius trigger
 #version
 scoreboard players set $du.ver.major load.status 2
 scoreboard players set $du.ver.minor load.status 4
-scoreboard players set $du.ver.fix load.status 0
+scoreboard players set $du.ver.fix load.status 1
 
 #Team Data
 team add du_nopush
