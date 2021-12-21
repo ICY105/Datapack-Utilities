@@ -13,6 +13,11 @@ scoreboard objectives add du_jump minecraft.custom:minecraft.jump
 scoreboard objectives add du_talked minecraft.custom:minecraft.talked_to_villager
 scoreboard objectives add pregen_radius trigger
 
+#command block enabled
+    # 0 is disabled
+    # 1 is enabled
+scoreboard objectives add du_commandblockenabled dummy
+scoreboard objectives add du_commandblocktest dummy
 #version
 scoreboard players set $du.ver.major load.status 2
 scoreboard players set $du.ver.minor load.status 4
