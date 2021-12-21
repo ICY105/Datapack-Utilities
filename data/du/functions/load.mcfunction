@@ -16,8 +16,9 @@ scoreboard objectives add pregen_radius trigger
 #command block enabled
     # 0 is disabled
     # 1 is enabled
+    # endpoint will break if chunk is unloaded
+forceload add 29000000 29999900 29000000 29999900
 scoreboard objectives add du_commandblockenabled dummy
-scoreboard objectives add du_commandblocktest dummy
 #version
 scoreboard players set $du.ver.major load.status 2
 scoreboard players set $du.ver.minor load.status 4

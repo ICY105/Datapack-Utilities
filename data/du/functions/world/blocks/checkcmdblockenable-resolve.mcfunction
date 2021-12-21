@@ -1,4 +1,3 @@
-scoreboard players set @a du_commandblocktest 0
-#scoreboard players set @a du_commandblocktest 1
-setblock 29000000 253 29999999 air replace
-setblock 29000000 252 29999999 air replace
+#clears all blocks leaving no trace
+setblock 29000000 253 29999900 air replace
+setblock 29000000 252 29999900 air replace
