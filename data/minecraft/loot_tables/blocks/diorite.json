@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air",
+          "name": "minecraft:diorite",
           "conditions": [
             {
               "condition": "minecraft:inverted",
@@ -21,7 +21,7 @@
         },
         {
           "type": "minecraft:item",
-          "name": "minecraft:diorite",
+          "name": "minecraft:air",
           "conditions": [
             {
               "condition": "minecraft:match_tool",
